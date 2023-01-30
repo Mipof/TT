@@ -11,7 +11,7 @@ public class Health : MonoBehaviour
     [SerializeField] private UnityEvent OnZeroShield;
 
 
-    public void GetDamage(int damage)
+    public void GetDamage(float damage)
     {
         if (_shield > damage)
         {
@@ -34,7 +34,7 @@ public class Health : MonoBehaviour
         }
     }
 
-    public void GetHeal(int heal)
+    public void GetHeal(float heal)
     {
         _actualHealth += heal;
         if (_actualHealth > _maxHealth)
@@ -43,7 +43,7 @@ public class Health : MonoBehaviour
         }
     }
 
-    public void GetShield(int shield)
+    public void GetShield(float shield)
     {
         _shield += shield;
     }
