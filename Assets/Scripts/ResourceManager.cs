@@ -1,18 +1,39 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
+using TMPro;
 using UnityEngine;
 
 public class ResourceManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private int _currency;
+    [SerializeField] private TextMeshProUGUI _currencyText;
+
+    private void Start()
     {
-        
+        _currencyText.text = _currency.ToString();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Purchase(int cost)
     {
-        
+        if (_currency >= cost)
+        {
+            _currency -= cost;
+            UpdateCurrencyText();
+        }
+    }
+
+    public bool CanPurchase(int cost)
+    {
+        return cost <= _currency;
+    }
+
+    public void AddCurrency(int currency)
+    {
+        _currency += currency;
+        UpdateCurrencyText();
+    }
+
+    private void UpdateCurrencyText()
+    {
+        _currencyText.text = _currency.ToString();
     }
 }
