@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8561205474306361367}
   - component: {fileID: 67174790816381480}
   - component: {fileID: 9187707130324778435}
+  - component: {fileID: 8723727833963180539}
   m_Layer: 0
   m_Name: enemyTest
   m_TagString: Enemy
@@ -180,3 +181,16 @@ MonoBehaviour:
   OnDestroy:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8723727833963180539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3944071547794188795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0929b0fb23d9a647aeabe621cd7bb8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationSpeed: 20
