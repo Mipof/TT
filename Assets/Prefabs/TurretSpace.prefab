@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 1327488658026655828}
   - component: {fileID: 3436407720989201546}
   - component: {fileID: 8869990565294202123}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TurretSpace
-  m_TagString: Untagged
+  m_TagString: TurretSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
