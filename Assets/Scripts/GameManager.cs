@@ -1,8 +1,10 @@
+using System;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     private static GameManager _app;
+    private GameState _gameState;
 
     private void Awake()
     {
@@ -16,8 +18,13 @@ public class GameManager : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
-    
-    
+
+    private void Start()
+    {
+        _gameState = GameState.MENU;
+    }
+
+
     public static GameManager Instance
     {
         get => _app;
@@ -26,7 +33,7 @@ public class GameManager : MonoBehaviour
 
     public GameState GameState
     {
-        get => GameState;
-        set => GameState = value;
+        get => _gameState;
+        set => _gameState = value;
     }
 }

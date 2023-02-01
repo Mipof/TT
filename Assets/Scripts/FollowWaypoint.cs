@@ -1,36 +1,23 @@
+using System.Collections;
 using UnityEngine;
 
 public class FollowWaypoint : MonoBehaviour
 {
     private GameObject[] _wayPoint;
     private int _wayPointIndex;
-    private Vector3 _direction;
     private bool _ready;
     
     private float _speed;
     
-    [SerializeField][Range(0f,5f)][Min(0f)]
+    [SerializeField][Range(0f,50f)][Min(0f)]
     private float _distanceThreshold;
 
     public void SetWaypoints(GameObject[] waypoint)
     {
         _wayPoint = waypoint;
         _wayPointIndex = 0;
-        _direction = _wayPoint[_wayPointIndex].transform.position;
         _ready = true;
-    }
-
-    private void Update()
-    {
-        if(_ready)
-        {
-            transform.position = Vector3.Lerp(transform.position, _direction, _speed * Time.deltaTime);
-            if (Vector3.Distance(transform.position, _direction) < _distanceThreshold)
-            {
-                if (_wayPoint.Length - 1 > _wayPointIndex) _wayPointIndex++;
-                _direction = _wayPoint[_wayPointIndex].transform.position;
-            }
-        }
+        StartCoroutine(MoveToNextWaypoint());
     }
 
     public void SetNotReady()
@@ -41,5 +28,23 @@ public class FollowWaypoint : MonoBehaviour
     public void SetSpeed(float speed)
     {
         _speed = speed;
+    }
+
+    IEnumerator MoveToNextWaypoint()
+    {
+        float distance = Vector3.Distance(transform.position, _wayPoint[_wayPointIndex].transform.position);
+        while (_ready && distance > _distanceThreshold && GameManager.Instance.GameState == GameState.PLAY)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, _wayPoint[_wayPointIndex].transform.position,
+                Time.deltaTime * _speed);
+            distance = Vector3.Distance(transform.position, _wayPoint[_wayPointIndex].transform.position);
+            yield return null;
+        }
+
+        if (_wayPointIndex < _wayPoint.Length - 1)
+        {
+            _wayPointIndex++;
+            StartCoroutine(MoveToNextWaypoint());
+        }
     }
 }
