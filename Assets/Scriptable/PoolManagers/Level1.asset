@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Pools:
   - TYPE: 0
-    QuantityInstansiated: 10
+    QuantityInstansiated: 1
     Prefab: {fileID: 3944071547794188795, guid: e8122734603721e4b903487427db0d4b,
       type: 3}

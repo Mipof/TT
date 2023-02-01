@@ -16,5 +16,5 @@ MonoBehaviour:
     Type: 0
     Health: 100
     Shield: 0
-    Speed: 10
+    Speed: 60
     DamagePerHit: 10
