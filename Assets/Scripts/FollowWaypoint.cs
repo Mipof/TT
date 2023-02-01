@@ -6,12 +6,11 @@ public class FollowWaypoint : MonoBehaviour
     private int _wayPointIndex;
     private Vector3 _direction;
     private bool _ready;
-
-    [SerializeField] [Range(0f, 10f)] [Min(0f)]
+    
     private float _speed;
-
-    [SerializeField] [Range(0f, 10f)] [Min(0)]
-    private float _distanceTreshold;
+    
+    [SerializeField][Range(0f,5f)][Min(0f)]
+    private float _distanceThreshold;
 
     public void SetWaypoints(GameObject[] waypoint)
     {
@@ -26,13 +25,21 @@ public class FollowWaypoint : MonoBehaviour
         if(_ready)
         {
             transform.position = Vector3.Lerp(transform.position, _direction, _speed * Time.deltaTime);
-            //print("Actual target: " + _wayPointIndex + " Actual distance: " + Vector3.Distance(transform.position,_direction));
-            if (Vector3.Distance(transform.position, _direction) < _distanceTreshold)
+            if (Vector3.Distance(transform.position, _direction) < _distanceThreshold)
             {
-                //print("Changing target");
                 if (_wayPoint.Length - 1 > _wayPointIndex) _wayPointIndex++;
                 _direction = _wayPoint[_wayPointIndex].transform.position;
             }
         }
+    }
+
+    public void SetNotReady()
+    {
+        _ready = false;
+    }
+
+    public void SetSpeed(float speed)
+    {
+        _speed = speed;
     }
 }

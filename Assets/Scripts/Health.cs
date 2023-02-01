@@ -3,13 +3,17 @@ using UnityEngine.Events;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField][Min(1)] private float _maxHealth;
+    private float _maxHealth;
     [SerializeField] private float _actualHealth;
     [SerializeField] private float _shield;
 
     [SerializeField] private UnityEvent OnZeroHealth;
     [SerializeField] private UnityEvent OnZeroShield;
 
+    public void SetMaxHealth(float max)
+    {
+        _maxHealth = max;
+    }
 
     public void GetDamage(float damage)
     {
@@ -41,6 +45,11 @@ public class Health : MonoBehaviour
         {
             _actualHealth = _maxHealth;
         }
+    }
+
+    public void HealToMax()
+    {
+        _actualHealth = _maxHealth;
     }
 
     public void GetShield(float shield)

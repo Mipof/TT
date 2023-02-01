@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 9205360282209946837}
   - component: {fileID: 6102514342039113445}
   - component: {fileID: 6222605269815949116}
-  - component: {fileID: -7414426269827453718}
   - component: {fileID: 8561205474306361367}
-  - component: {fileID: 67174790816381480}
-  - component: {fileID: 9187707130324778435}
-  - component: {fileID: 8723727833963180539}
+  - component: {fileID: 8942982737215082483}
+  - component: {fileID: 6653199405852631476}
+  - component: {fileID: 2868206787600839101}
+  - component: {fileID: 3901299412103917125}
   m_Layer: 0
   m_Name: enemyTest
   m_TagString: Enemy
@@ -102,20 +102,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-7414426269827453718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3944071547794188795}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa7cea2382d1d85468e6cab0cb8a5248, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speed: 1
-  _distanceTreshold: 1
 --- !u!54 &8561205474306361367
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -132,7 +118,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &67174790816381480
+--- !u!114 &8942982737215082483
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,15 +130,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837e27a8dccb2a14ab3d2495d86c9a29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 7
-  _actualHealth: 7
-  _shield: 2
+  _actualHealth: 0
+  _shield: 0
   OnZeroHealth:
     m_PersistentCalls:
+      m_Calls: []
+  OnZeroShield:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &6653199405852631476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3944071547794188795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7cea2382d1d85468e6cab0cb8a5248, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 0
+  _distanceTreshold: 0
+--- !u!114 &2868206787600839101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3944071547794188795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62290b08bb8831f43a60fda7c2205f22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3901299412103917125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3944071547794188795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 142b6c8a2942501439adf2daab73be1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data: {fileID: 11400000, guid: f1f886b349038a1469ef6f54c9444f79, type: 2}
+  OnBackToPool:
+    m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9187707130324778435}
-        m_TargetAssemblyTypeName: DestroyGameObject, Assembly-CSharp
-        m_MethodName: DestroyGO
+      - m_Target: {fileID: 6653199405852631476}
+        m_TargetAssemblyTypeName: FollowWaypoint, Assembly-CSharp
+        m_MethodName: SetNotReady
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -162,35 +192,3 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  OnZeroShield:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &9187707130324778435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3944071547794188795}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df1996d5f261a254ab7748f123c15b5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _timeBeforeDestroy: 0
-  OnDestroy:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &8723727833963180539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3944071547794188795}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0929b0fb23d9a647aeabe621cd7bb8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _rotationSpeed: 20

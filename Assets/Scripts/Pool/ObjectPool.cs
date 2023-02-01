@@ -19,6 +19,7 @@ public class ObjectPool
     {
 
         GameObject clone = GameObject.Instantiate(ObjectPrefab);
+        clone.SetActive(false);
         clone.transform.name = ObjectPrefab.name;
         /*if (!clone.TryGetComponent(out GOToPool component))
         {
