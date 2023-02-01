@@ -33,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 3944071547794188795}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalScale: {x: 30, y: 30, z: 30}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -114,10 +114,10 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &8942982737215082483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,8 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa7cea2382d1d85468e6cab0cb8a5248, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 0
-  _distanceTreshold: 0
+  _distanceThreshold: 50
 --- !u!114 &2868206787600839101
 MonoBehaviour:
   m_ObjectHideFlags: 0

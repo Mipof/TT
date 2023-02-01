@@ -1,13 +1,15 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class WavesSpawner : MonoBehaviour
 {
     [SerializeField] private EnemyWaves _wave;
-    [SerializeField] private LevelManager _levelManager;
+    [SerializeField] private PoolManager _poolManager;
+    [SerializeField] private GameObject[] _waypoints;
     private int _currentWave;
 
-    private void Spawn()
+    public void Spawn()
     {
         StartCoroutine(WaveSpawnRoutine());
     }
@@ -26,9 +28,14 @@ public class WavesSpawner : MonoBehaviour
     {
         for (int i = 0; i < wave.Quantity; i++)
         {
-            GameObject enemy = _levelManager.GetPool(_wave._waves[_currentWave].EnemyType).GetGameObjectFromPool();
+            PoolManager.EnemyPool pool = _poolManager.GetPool(_wave._waves[_currentWave].EnemyType);
+            GameObject enemy = pool.Pool.GetGameObjectFromPool();
             enemy.transform.position = transform.position;
             enemy.SetActive(true);
+            if (enemy.TryGetComponent(out FollowWaypoint waypoint))
+            {
+                waypoint.SetWaypoints(_waypoints);
+            }
             yield return new WaitForSeconds(wave.TimeDelay);
         }
 

@@ -10,7 +10,6 @@ public class EnemyWaves : ScriptableObject
         public EnemyType EnemyType;
         public int Quantity;
         public float TimeDelay;
-        public GameObject Prefab;
     }
     
     public EnemyQty[] _waves;

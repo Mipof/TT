@@ -1,15 +1,13 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using Cinemachine;
 using UnityEngine;
 
 public class LookAtCamera : MonoBehaviour
 {
     [SerializeField] private CinemachineBrain _brain;
-    [SerializeField] private CameraControl _control;
     private void Update()
     {
-        transform.LookAt(_brain.OutputCamera.transform);
+        Vector3 cameraPosition = _brain.OutputCamera.transform.position;
+        Vector3 lookingAt = new Vector3(cameraPosition.x, transform.position.y, cameraPosition.z);
+        transform.LookAt(lookingAt);
     }
 }

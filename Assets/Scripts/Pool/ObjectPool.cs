@@ -19,18 +19,23 @@ public class ObjectPool
     {
 
         GameObject clone = GameObject.Instantiate(ObjectPrefab);
-        clone.SetActive(false);
+        
         clone.transform.name = ObjectPrefab.name;
-        /*if (!clone.TryGetComponent(out GOToPool component))
+        if (clone.TryGetComponent(out GOToPool pool))
         {
-            component = clone.AddComponent<GOToPool>();
-            component.SetObjecPool(this);
-        }*/
+            pool.SetObjecPool(this);
+        }
+        //clone.SetActive(false);
         return clone;
     }
     
     public void ReturnGameObjectToPool(GameObject go)
     {
         _objectsInPool.Push(go);
+    }
+
+    public string ReturnPrefabName()
+    {
+        return ObjectPrefab.name;
     }
 }

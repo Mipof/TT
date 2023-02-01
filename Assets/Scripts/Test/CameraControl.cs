@@ -7,7 +7,7 @@ public class CameraControl : MonoBehaviour
     [SerializeField] private CinemachineBrain _brain;
     [SerializeField] private CinemachineVirtualCamera[] _listCamera;
     private CinemachineVirtualCamera _activeCamera;
-    private int _cameraIndex = 0;
+    [SerializeField] private int _cameraIndex = 0;
 
     private void Awake()
     {
@@ -21,6 +21,7 @@ public class CameraControl : MonoBehaviour
 
     public void IncreaseCam()
     {
+        print("increasing");
         _activeCamera.Priority = 0;
         _cameraIndex++;
         if (_cameraIndex >= _listCamera.Length)
