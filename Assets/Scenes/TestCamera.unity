@@ -2661,6 +2661,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 583918425}
     m_Modifications:
+    - target: {fileID: 4269734393848972304, guid: 292077109c1fd654f9174542ba43565d,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269734393848972304, guid: 292077109c1fd654f9174542ba43565d,
+        type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4269734393848972306, guid: 292077109c1fd654f9174542ba43565d,
         type: 3}
       propertyPath: _brain
