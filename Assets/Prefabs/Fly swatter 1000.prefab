@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2972448787688109999}
   - component: {fileID: 1862303194886294395}
   - component: {fileID: 2359230199268306218}
+  - component: {fileID: 3844674290109760296}
   m_Layer: 0
   m_Name: Fly swatter 1000
   m_TagString: Untagged
@@ -119,4 +120,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _brain: {fileID: 0}
-  _control: {fileID: 0}
+--- !u!65 &3844674290109760296
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2614038386316109477}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 39.15, y: 5.56, z: 22.5}
+  m_Center: {x: 0, y: -5.2, z: 0}

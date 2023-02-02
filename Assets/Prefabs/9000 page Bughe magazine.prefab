@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8385859247551530107}
   - component: {fileID: 6698135613361713697}
   - component: {fileID: 5995870188472435242}
+  - component: {fileID: 666394268747497266}
   m_Layer: 0
   m_Name: 9000 page Bughe magazine
   m_TagString: Untagged
@@ -119,4 +120,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _brain: {fileID: 0}
-  _control: {fileID: 0}
+--- !u!65 &666394268747497266
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8493543089268640048}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 37.7, y: 7.11, z: 10}
+  m_Center: {x: 0, y: -3.91, z: 0}
