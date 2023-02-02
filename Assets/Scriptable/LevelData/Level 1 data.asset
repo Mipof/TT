@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8621c3e2f531b9f4e860adff97eb51cc, type: 3}
-  m_Name: Level1
+  m_Script: {fileID: 11500000, guid: c62b15b60625bf344b8e20977f6f6a5b, type: 3}
+  m_Name: Level 1 data
   m_EditorClassIdentifier: 
-  Pools:
-  - TYPE: 0
-    QuantityInstansiated: 50
-    Prefab: {fileID: 3944071547794188795, guid: e8122734603721e4b903487427db0d4b,
-      type: 3}
+  _level:
+    LevelName: the Root of all problems
+    LevelDescription: 
+    TimeBeforeAttack: 10
+    InitialCurrency: 100

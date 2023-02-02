@@ -28,6 +28,7 @@ public class ResourceManager : MonoBehaviour
 
     public void AddCurrency(int currency)
     {
+        
         _currency += currency;
         UpdateCurrencyText();
     }

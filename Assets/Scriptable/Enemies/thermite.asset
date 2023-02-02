@@ -18,3 +18,4 @@ MonoBehaviour:
     Shield: 0
     Speed: 60
     DamagePerHit: 10
+    CurrencyOnDeath: 10
