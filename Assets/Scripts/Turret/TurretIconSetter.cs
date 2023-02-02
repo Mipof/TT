@@ -6,20 +6,23 @@ public class TurretIconSetter : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI _turretName;
     [SerializeField] private TextMeshProUGUI _turretCost;
-    [SerializeField] private Image _turretImage;
+    [SerializeField] private  Image _turretImage;
 
-    private LevelManager _levelManager;
+    private UIManager _uiManager;
+    private TurretData _data;
 
-    public void SetTurretIcon(string name, int cost, Sprite image, LevelManager manager)
+    public void SetTurretIcon(TurretData data, UIManager uiManager)
     {
-        _turretName.text = name;
-        _turretCost.text = cost.ToString();
-        _turretImage.sprite = image;
-        _levelManager = manager;
+        _turretName.text = data._turret.Type.ToString();
+        _turretCost.text = data._turret.CostToUpgrade.ToString();
+        _turretImage.sprite = data._turret.sprite;
+        _uiManager = uiManager;
+        _data = data;
     }
 
-    public void GenerateTurret()
+    public void GrabTurret()
     {
-        
+        _uiManager.GrabTurret(_data);
     }
+    
 }

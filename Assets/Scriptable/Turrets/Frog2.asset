@@ -20,3 +20,6 @@ MonoBehaviour:
     CanUpgrade: 1
     CostToUpgrade: 2
     IsAnimated: 1
+    Prefab: {fileID: 8014857611221672364, guid: cb97e9ecc2fbe114490a67d1df41302a,
+      type: 3}
+    sprite: {fileID: 0}

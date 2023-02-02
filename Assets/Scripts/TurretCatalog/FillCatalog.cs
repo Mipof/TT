@@ -3,6 +3,7 @@ using UnityEngine;
 public class FillCatalog : MonoBehaviour
 {
     [SerializeField] private GameObject _prefab;
+    [SerializeField] private UIManager _uiManager;
     private LevelData _levelData;
     private LevelManager _levelManager;
     
@@ -22,7 +23,7 @@ public class FillCatalog : MonoBehaviour
         GameObject prefab = Instantiate(_prefab, transform);
         if (prefab.TryGetComponent(out TurretIconSetter setter))
         {
-            setter.SetTurretIcon(data._turret.Type.ToString(), data._turret.CostToBuild, data._turret.sprite, _levelManager);
+            setter.SetTurretIcon(data, _uiManager);
         }
     }
 

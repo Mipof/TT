@@ -16,8 +16,9 @@ public class Turret : MonoBehaviour
     [SerializeField] private UnityEvent<TurretData> OnNewTurret;
 
     private int _indexUpgrade = 0;
-    private LevelManager _levelManager;
+    [SerializeField] private LevelManager _levelManager;
     private Animator _liveAnimator;
+    private bool _ready;
 
     private void Awake()
     {
@@ -35,14 +36,17 @@ public class Turret : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (_data[_indexUpgrade]._turret.CanUpgrade &&
-            _levelManager.CanUpgrade(_data[_indexUpgrade]._turret.CostToUpgrade))
+        if(_ready)
         {
-            _upgradeIcon.SetActive(true);
-        }
-        else
-        {
-            _upgradeIcon.SetActive(false);
+            if (_data[_indexUpgrade]._turret.CanUpgrade &&
+                _levelManager.CanUpgrade(_data[_indexUpgrade]._turret.CostToUpgrade))
+            {
+                _upgradeIcon.SetActive(true);
+            }
+            else
+            {
+                _upgradeIcon.SetActive(false);
+            }
         }
     }
 
@@ -61,5 +65,10 @@ public class Turret : MonoBehaviour
         }
         OnNewTurret?.Invoke(_data[_indexUpgrade]);
         
+    }
+
+    public void SetReady()
+    {
+        _ready = true;
     }
 }
