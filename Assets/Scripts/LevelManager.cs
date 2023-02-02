@@ -1,16 +1,24 @@
+using Cinemachine;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class LevelManager : MonoBehaviour
 {
+    [SerializeField] private CinemachineBrain _levelBrain;
     [SerializeField] private PoolManager _poolManager;
-    [SerializeField] private UnityEvent OnGameStart;
+    [SerializeField] private LevelData _levelData;
+    [SerializeField] private ResourceManager _resourceManager;
+    [Space(40)] [SerializeField] private UnityEvent OnGameStart;
     [SerializeField] private UnityEvent OnGamePause;
     [SerializeField] private UnityEvent OnGameResume;
+
 
     private void Awake()
     {
         _poolManager.CreatePools();
+        _resourceManager.AddCurrency(_levelData._level.InitialCurrency);
+        GameManager.Instance.Brain = _levelBrain;
+        GameManager.Instance.LevelManager = this;
     }
 
     public void StartGame()
@@ -26,10 +34,8 @@ public class LevelManager : MonoBehaviour
         Time.timeScale = 0;
     }
 
-
-
-
-
-
-
+    public void AddCurrency(int currency)
+    {
+        _resourceManager.AddCurrency(currency);
+    }
 }

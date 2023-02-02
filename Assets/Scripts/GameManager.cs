@@ -1,10 +1,13 @@
 using System;
+using Cinemachine;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     private static GameManager _app;
     private GameState _gameState;
+    private CinemachineBrain _brain;
+    private LevelManager _levelManager;
 
     private void Awake()
     {
@@ -35,5 +38,17 @@ public class GameManager : MonoBehaviour
     {
         get => _gameState;
         set => _gameState = value;
+    }
+
+    public CinemachineBrain Brain
+    {
+        get => _brain;
+        set => _brain = value;
+    }
+
+    public LevelManager LevelManager
+    {
+        get => _levelManager;
+        set => _levelManager = value;
     }
 }

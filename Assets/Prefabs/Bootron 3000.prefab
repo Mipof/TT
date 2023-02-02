@@ -9,11 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4269734393848972311}
-  - component: {fileID: 4269734393848972305}
   - component: {fileID: 4269734393848972304}
   - component: {fileID: 4269734393848972306}
   - component: {fileID: 8616332736915927632}
-  - component: {fileID: 6872632362765776967}
+  - component: {fileID: 1552299799411718239}
   m_Layer: 0
   m_Name: Bootron 3000
   m_TagString: Untagged
@@ -36,19 +35,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &4269734393848972305
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4269734393848972310}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 11.49, y: 2.6, z: 11.81}
-  m_Center: {x: -4.44, y: -3.77, z: 0}
 --- !u!212 &4269734393848972304
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -90,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: dcd53ad318f7c004e8bf7243662e9f94, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 823c300ff9ec4c847b2ef72d3ed3254c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -114,7 +100,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _brain: {fileID: 0}
-  _control: {fileID: 0}
 --- !u!95 &8616332736915927632
 Animator:
   serializedVersion: 5
@@ -135,7 +120,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!65 &6872632362765776967
+--- !u!65 &1552299799411718239
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,8 +128,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4269734393848972310}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 27.324455, y: 20.48, z: 0.2}
+  m_Size: {x: 35.2, y: 11.4, z: 15.3}
   m_Center: {x: 0, y: 0, z: 0}

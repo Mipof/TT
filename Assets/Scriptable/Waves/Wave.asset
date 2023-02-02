@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _waves:
   - EnemyType: 0
-    Quantity: 10
+    Quantity: 50
     TimeDelay: 1

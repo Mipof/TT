@@ -119,4 +119,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _brain: {fileID: 0}
-  _control: {fileID: 0}

@@ -12,6 +12,7 @@ public class EnemyData : ScriptableObject
         public float Shield;
         public float Speed;
         public float DamagePerHit;
+        public int CurrencyOnDeath;
     }
 
     public Enemy _enemy;
