@@ -1,23 +1,23 @@
+using System;
 using System.Collections;
+using Cinemachine;
 using UnityEngine;
 
-public class TurretMenu : MonoBehaviour
+public class GrabTurret : MonoBehaviour
 {
-    [SerializeField] private GameObject[] _turrets;
-    [SerializeField] private Camera _mainCamera;
     [SerializeField] private float _maxRayDistance = 20;
     [SerializeField] private LayerMask _groundLayer;
-
+    [SerializeField] private CinemachineBrain _brain;
     private float _turretOffset;
-
+    
     private GameObject _heldTurret;
     private bool _hold;
-    
-    public void GrabATurret(int index)
+
+    public void GrabATurret(TurretData _data)
     {
         if (!_hold)
         {
-            _heldTurret = Instantiate(_turrets[index]);
+            _heldTurret = Instantiate(_data._turret.Prefab);
             if (_heldTurret.TryGetComponent(out Turret turret))
             {
                 _turretOffset = turret.GetOffset();
@@ -30,7 +30,7 @@ public class TurretMenu : MonoBehaviour
     {
         while (_heldTurret)
         {
-            Ray ray = _mainCamera.ScreenPointToRay(Input.mousePosition);
+            Ray ray = _brain.OutputCamera.ScreenPointToRay(Input.mousePosition);
 
             if (Physics.Raycast(ray, out RaycastHit hitInfo, _maxRayDistance, _groundLayer))
             {

@@ -43,4 +43,9 @@ public class LevelManager : MonoBehaviour
     {
         return _resourceManager.CanPurchase(cost);
     }
+
+    public LevelData GetData()
+    {
+        return _levelData;
+    }
 }
