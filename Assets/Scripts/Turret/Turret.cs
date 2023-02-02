@@ -55,7 +55,10 @@ public class Turret : MonoBehaviour
     public void UpgradeTurret()
     {
         _indexUpgrade++;
-        _liveAnimator.runtimeAnimatorController = _animations[_indexUpgrade];
+        if(_data[_indexUpgrade]._turret.IsAnimated)
+        {
+            _liveAnimator.runtimeAnimatorController = _animations[_indexUpgrade];
+        }
         OnNewTurret?.Invoke(_data[_indexUpgrade]);
         
     }

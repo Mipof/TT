@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.981
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.04798701, g: 0.15886109, b: 0.21455777, a: 0.981}
+  m_IndirectSpecularColor: {r: 0.04798269, g: 0.15885714, b: 0.21455061, a: 0.981}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1529,6 +1529,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4503665505205504571}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1620106227 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1100056725240605132, guid: f5f7718fe1407574e8c831c35e3d5939,
+    type: 3}
+  m_PrefabInstance: {fileID: 4503665505205504571}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e269b3e02a4ecb54f907d0906869726f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1672720317
 GameObject:
   m_ObjectHideFlags: 0
@@ -2747,6 +2759,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 583918425}
     m_Modifications:
+    - target: {fileID: 2395207245682835758, guid: f5f7718fe1407574e8c831c35e3d5939,
+        type: 3}
+      propertyPath: OnNewTurret.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2395207245682835758, guid: f5f7718fe1407574e8c831c35e3d5939,
+        type: 3}
+      propertyPath: OnNewTurret.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2395207245682835758, guid: f5f7718fe1407574e8c831c35e3d5939,
+        type: 3}
+      propertyPath: OnNewTurret.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1620106227}
+    - target: {fileID: 2395207245682835758, guid: f5f7718fe1407574e8c831c35e3d5939,
+        type: 3}
+      propertyPath: OnNewTurret.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2395207245682835758, guid: f5f7718fe1407574e8c831c35e3d5939,
+        type: 3}
+      propertyPath: OnNewTurret.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetNewDamage
+      objectReference: {fileID: 0}
+    - target: {fileID: 2395207245682835758, guid: f5f7718fe1407574e8c831c35e3d5939,
+        type: 3}
+      propertyPath: OnNewTurret.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Damage, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2395207245682835758, guid: f5f7718fe1407574e8c831c35e3d5939,
+        type: 3}
+      propertyPath: OnNewTurret.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4503665503585472970, guid: f5f7718fe1407574e8c831c35e3d5939,
         type: 3}
       propertyPath: m_Color.b
