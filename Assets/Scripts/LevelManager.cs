@@ -38,4 +38,9 @@ public class LevelManager : MonoBehaviour
     {
         _resourceManager.AddCurrency(currency);
     }
+
+    public bool CanUpgrade(int cost)
+    {
+        return _resourceManager.CanPurchase(cost);
+    }
 }

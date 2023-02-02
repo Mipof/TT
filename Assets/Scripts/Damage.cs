@@ -2,8 +2,7 @@ using UnityEngine;
 
 public class Damage : MonoBehaviour
 {
-    [SerializeField] [Min(0f)] [Range(0f, 10f)]
-    private float _damage;
+    [SerializeField] private float _damage;
 
 
     public void SendDamage(GameObject target)
@@ -12,5 +11,10 @@ public class Damage : MonoBehaviour
         {
             health.GetDamage(_damage);
         }
+    }
+
+    public void SetNewDamage(TurretData data)
+    {
+        _damage = data._turret.DamagePerHit;
     }
 }

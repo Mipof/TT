@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 4503665503585472969}
   - component: {fileID: 4503665503585472970}
   - component: {fileID: 6427853379486199771}
+  - component: {fileID: 1100056725240605132}
+  - component: {fileID: 6840308853102964829}
+  - component: {fileID: 2395207245682835758}
   m_Layer: 0
   m_Name: Frog
   m_TagString: Untagged
@@ -119,3 +122,64 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _brain: {fileID: 0}
+--- !u!114 &1100056725240605132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4503665503585472980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e269b3e02a4ecb54f907d0906869726f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damage: 0
+--- !u!114 &6840308853102964829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4503665503585472980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 837e27a8dccb2a14ab3d2495d86c9a29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _actualHealth: 0
+  _shield: 0
+  OnZeroHealth:
+    m_PersistentCalls:
+      m_Calls: []
+  OnZeroShield:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2395207245682835758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4503665503585472980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed8abf2eb363a3e438497a9a22ed7fdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _offset: 0
+  _data:
+  - {fileID: 11400000, guid: 8011120fa6ace9a47b014f57261367bc, type: 2}
+  - {fileID: 11400000, guid: 4f9221741f0705141a794282cd2276c1, type: 2}
+  - {fileID: 11400000, guid: 5a24f73579dadb6468a3db01e3533047, type: 2}
+  _animations:
+  - {fileID: 9100000, guid: a752d28696e163d41be074e3c111495a, type: 2}
+  - {fileID: 9100000, guid: 218c6c832adb90a4392381c7ab764a78, type: 2}
+  - {fileID: 9100000, guid: 0103369f3c604764e9a33e370d947780, type: 2}
+  _upgradeIcon: {fileID: 0}
+  OnRemove:
+    m_PersistentCalls:
+      m_Calls: []
+  OnNewTurret:
+    m_PersistentCalls:
+      m_Calls: []
