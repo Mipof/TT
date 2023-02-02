@@ -23,7 +23,7 @@ public class ResourceManager : MonoBehaviour
 
     public bool CanPurchase(int cost)
     {
-        return cost <= _currency;
+        return cost < _currency;
     }
 
     public void AddCurrency(int currency)

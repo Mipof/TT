@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -17,8 +18,10 @@ public class Turret : MonoBehaviour
 
     private int _indexUpgrade = 0;
     [SerializeField] private LevelManager _levelManager;
+    [SerializeField] private float _waitToUpdate = 2;
     private Animator _liveAnimator;
     private bool _ready;
+    private bool _canUpdate = true;
 
     private void Awake()
     {
@@ -36,7 +39,7 @@ public class Turret : MonoBehaviour
 
     private void LateUpdate()
     {
-        if(_ready)
+        if(_ready && _canUpdate)
         {
             if (_data[_indexUpgrade]._turret.CanUpgrade &&
                 _levelManager.CanUpgrade(_data[_indexUpgrade]._turret.CostToUpgrade))
@@ -55,16 +58,28 @@ public class Turret : MonoBehaviour
         OnRemove?.Invoke();
     }
 
-    [ContextMenu("upgrade")]
     public void UpgradeTurret()
     {
-        _indexUpgrade++;
-        if(_data[_indexUpgrade]._turret.IsAnimated)
+        if(_canUpdate)
         {
-            _liveAnimator.runtimeAnimatorController = _animations[_indexUpgrade];
+            _canUpdate = false;
+            _upgradeIcon.SetActive(false);
+            StartCoroutine(CanUpdateDelay());
+            _indexUpgrade++;
+            if (_data[_indexUpgrade]._turret.IsAnimated)
+            {
+                _liveAnimator.runtimeAnimatorController = _animations[_indexUpgrade];
+            }
+
+            OnNewTurret?.Invoke(_data[_indexUpgrade]);
         }
-        OnNewTurret?.Invoke(_data[_indexUpgrade]);
         
+    }
+
+    IEnumerator CanUpdateDelay()
+    {
+        yield return new WaitForSeconds(_waitToUpdate);
+        _canUpdate = true;
     }
 
     public void SetReady()
