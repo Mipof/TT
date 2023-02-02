@@ -10,6 +10,7 @@ public class TurretData : ScriptableObject
       public float DamagePerHit;
       public float Health;
       public int CostToBuild;
+      public bool CanUpgrade;
       public int CostToUpgrade;
    }
 
