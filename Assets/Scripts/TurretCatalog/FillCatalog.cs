@@ -4,11 +4,13 @@ public class FillCatalog : MonoBehaviour
 {
     [SerializeField] private GameObject _prefab;
     private LevelData _levelData;
+    private LevelManager _levelManager;
     
 
     private void OnEnable()
     {
-        _levelData = GameManager.Instance.LevelManager.GetData();
+        _levelManager = GameManager.Instance.LevelManager;
+        _levelData = _levelManager.GetData();
         for (int i = 0; i < _levelData._turrets.Length; i++)
         {
             CreateCatalog(_levelData._turrets[i]);
@@ -20,7 +22,7 @@ public class FillCatalog : MonoBehaviour
         GameObject prefab = Instantiate(_prefab, transform);
         if (prefab.TryGetComponent(out TurretIconSetter setter))
         {
-            setter.SetTurretIcon(data._turret.Type.ToString(), data._turret.CostToBuild, data._turret.sprite);
+            setter.SetTurretIcon(data._turret.Type.ToString(), data._turret.CostToBuild, data._turret.sprite, _levelManager);
         }
     }
 
