@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 4671870315631424760}
   - component: {fileID: 283929074872980987}
   - component: {fileID: -7600051884245542148}
+  - component: {fileID: 8596360256368004595}
   m_Layer: 0
   m_Name: Grasshopper
   m_TagString: Enemy
@@ -34,7 +35,7 @@ Transform:
   m_GameObject: {fileID: 2202477200903156702}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 274, y: 25, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -265,3 +266,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 27.324455, y: 20.48, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8596360256368004595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2202477200903156702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d941368ab81de9142bb9a7c14b233ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  X: 1
+  Y: 1
+  Z: 1
