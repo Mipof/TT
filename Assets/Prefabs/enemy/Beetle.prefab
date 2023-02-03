@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6807762865488826006}
   - component: {fileID: -4439886256302598532}
   - component: {fileID: 6951744729406527976}
+  - component: {fileID: -5584594001989373226}
   m_Layer: 0
   m_Name: Beetle
   m_TagString: Enemy
@@ -214,3 +215,16 @@ MonoBehaviour:
   OnBackToPool:
     m_PersistentCalls:
       m_Calls: []
+--- !u!65 &-5584594001989373226
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5110552329264007300}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 27.324455, y: 20.48, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}

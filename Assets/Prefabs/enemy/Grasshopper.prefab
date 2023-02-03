@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -9132964326988189327}
   - component: {fileID: -7833055323524728731}
   - component: {fileID: 4671870315631424760}
+  - component: {fileID: 2551652022928599551}
   m_Layer: 0
   m_Name: Grasshopper
   m_TagString: Enemy
@@ -202,3 +203,16 @@ MonoBehaviour:
   OnBackToPool:
     m_PersistentCalls:
       m_Calls: []
+--- !u!65 &2551652022928599551
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2202477200903156702}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 27.324455, y: 20.48, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
