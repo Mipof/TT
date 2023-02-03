@@ -12,4 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65478482825ff2b479d746f006a58706, type: 3}
   m_Name: Lv 1 - R4
   m_EditorClassIdentifier: 
-  _waves: []
+  _waves:
+  - WavaName: 1
+    EnemyType: 0
+    Quantity: 1
+    TimeDelay: 37.5
+  - WavaName: 1
+    EnemyType: 0
+    Quantity: 9
+    TimeDelay: 1
+  - WavaName: 1
+    EnemyType: 0
+    Quantity: 1
+    TimeDelay: 37.5
+  - WavaName: 2
+    EnemyType: 0
+    Quantity: 5
+    TimeDelay: 1

@@ -13,7 +13,19 @@ MonoBehaviour:
   m_Name: Lv 1 - R3
   m_EditorClassIdentifier: 
   _waves:
-  - WavaName: 
+  - WavaName: 1
     EnemyType: 0
-    Quantity: 10
+    Quantity: 1
+    TimeDelay: 25
+  - WavaName: 1
+    EnemyType: 0
+    Quantity: 9
+    TimeDelay: 1
+  - WavaName: 1
+    EnemyType: 0
+    Quantity: 1
+    TimeDelay: 37.5
+  - WavaName: 2
+    EnemyType: 0
+    Quantity: 5
     TimeDelay: 1
