@@ -11,6 +11,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private ResourceManager _resourceManager;
     [Space(40)] [SerializeField] private UnityEvent OnGameStart;
     [SerializeField] private UnityEvent OnGamePause;
+    [SerializeField] private UnityEvent OnGamePrepare;
     [SerializeField] private UnityEvent OnGameResume;
     [SerializeField] private GameObject _tree;
 
@@ -31,6 +32,7 @@ public class LevelManager : MonoBehaviour
     {
         GameManager.Instance.GameState = GameState.PLAY;
         Time.timeScale = 1;
+        OnGamePrepare?.Invoke();
         StartCoroutine(WaitToStartWaves(_levelData._level.TimeBeforeAttack));
     }
 
