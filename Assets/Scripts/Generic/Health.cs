@@ -56,4 +56,9 @@ public class Health : MonoBehaviour
     {
         _shield += shield;
     }
+
+    public void InstaKill()
+    {
+        GetDamageOnHealth(_actualHealth);
+    }
 }

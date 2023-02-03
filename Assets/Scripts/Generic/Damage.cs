@@ -7,14 +7,15 @@ public class Damage : MonoBehaviour
 
     public void SendDamage(GameObject target)
     {
+        print("Damage");
         if (target.TryGetComponent(out Health health))
         {
             health.GetDamage(_damage);
         }
     }
 
-    public void SetNewDamage(TurretData data)
+    public void SetNewDamage(int damage)
     {
-        _damage = data._turret.DamagePerHit;
+        _damage = damage;
     }
 }

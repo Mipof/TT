@@ -45,7 +45,7 @@ public class GrabTurret : MonoBehaviour
             if (Physics.Raycast(ray, out RaycastHit hitInfo))
             {
                 _heldTurret.transform.position = PositionWithOffset(hitInfo.point, _turretOffset);
-
+                CameraEnum cameraEnum = CameraEnum.CAMERA_ONE;
 
                 if (Input.GetMouseButton(0)
                     && hitInfo.collider.CompareTag("TurretSlot")
@@ -57,13 +57,19 @@ public class GrabTurret : MonoBehaviour
                         lookat.Stop();   
                     }
 
-                    _heldTurret.transform.rotation = new Quaternion(0, 0, 0, 0);
-                    _heldTurret.transform.Rotate(new Vector3(2,0,0),Space.Self);  
+                    /*_heldTurret.transform.rotation = new Quaternion(0, 0, 0, 0);
+                    _heldTurret.transform.Rotate(new Vector3(2,0,0),Space.Self);  */
 
                     _heldTurret.transform.SetParent(hitInfo.transform);
+                    //_heldTurret.transform.localPosition = new Vector3(0, 32f, 0.8f);
+                    if (hitInfo.transform.gameObject.TryGetComponent(out TurretSlotManager slot))
+                    {
+                        cameraEnum = slot.GetCamera();
+                    }
                     if (_heldTurret.TryGetComponent(out Turret turret))
                     {
                         turret.SetReady();
+                        turret.FillLookAt(cameraEnum);
                         _levelManager.ChargeTurret(data._turret.CostToBuild);
                     }
                     _heldTurret.transform.localScale = new Vector3(0.1f,4f, 0.1f);

@@ -5,6 +5,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject _turretShopButton;
     [SerializeField] private GameObject _turretCatalog;
     [SerializeField] private GameObject _pauseMenu;
+    [SerializeField] private GameObject _winScreen;
+    [SerializeField] private GameObject _loseScreen;
 
     private bool _isPause;
 

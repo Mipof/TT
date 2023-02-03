@@ -5,6 +5,7 @@ using UnityEngine.Serialization;
 [RequireComponent(typeof(Health))]
 [RequireComponent(typeof(FollowWaypoint))]
 [RequireComponent(typeof(GOToPool))]
+[RequireComponent(typeof(Damage))]
 
 public class Enemy : MonoBehaviour
 {
@@ -16,17 +17,22 @@ public class Enemy : MonoBehaviour
 
     private Health _health;
     private FollowWaypoint _waypoint;
+    private Damage _damage;
    
     private void OnEnable()
     {
         _health = GetComponent<Health>();
         _waypoint = GetComponent<FollowWaypoint>();
+        _damage = GetComponent<Damage>();
         
         _health.SetMaxHealth(_data._enemy.Health);
         _health.GetShield(_data._enemy.Shield);
         _health.HealToMax();
         
         _waypoint.SetSpeed(_data._enemy.Speed);
+        
+        _damage.SetNewDamage(_data._enemy.DamagePerHit);
+        
     }
 
     private void OnDisable()

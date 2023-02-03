@@ -19,7 +19,8 @@ GameObject:
   - component: {fileID: 6280172262745248655}
   - component: {fileID: -8177121868270387651}
   - component: {fileID: 507022455375663648}
-  - component: {fileID: 1139325815966202480}
+  - component: {fileID: 5648728801174214857}
+  - component: {fileID: 8016156745472205457}
   m_Layer: 0
   m_Name: Termite
   m_TagString: Enemy
@@ -129,6 +130,9 @@ MonoBehaviour:
   X: 1
   Y: 1
   Z: 1
+  _lookAllTime: 1
+  _off: 0
+  _camera: 0
 --- !u!54 &8489799453868855905
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -282,7 +286,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 27.324455, y: 20.48, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1139325815966202480
+--- !u!114 &5648728801174214857
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -291,9 +295,35 @@ MonoBehaviour:
   m_GameObject: {fileID: 8169320908573551320}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d941368ab81de9142bb9a7c14b233ca7, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c024681e1ac2d741bc5a3b978873101, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  X: 0
-  Y: 0
-  Z: 0
+  OnEnemyEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8016156745472205457}
+        m_TargetAssemblyTypeName: Damage, Assembly-CSharp
+        m_MethodName: SendDamage
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _tagField: Tree
+--- !u!114 &8016156745472205457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8169320908573551320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e269b3e02a4ecb54f907d0906869726f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damage: 0

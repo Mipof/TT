@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data: {fileID: 11400000, guid: f1f886b349038a1469ef6f54c9444f79, type: 2}
-  SendCurrency:
+  OnDeath:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: -3338659279181480878}
@@ -231,6 +231,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d616456bfa38f7949bc070669a817211, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnCurrencyAdded:
-    m_PersistentCalls:
-      m_Calls: []

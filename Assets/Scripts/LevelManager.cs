@@ -1,3 +1,4 @@
+using System.Collections;
 using Cinemachine;
 using UnityEngine;
 using UnityEngine.Events;
@@ -11,12 +12,14 @@ public class LevelManager : MonoBehaviour
     [Space(40)] [SerializeField] private UnityEvent OnGameStart;
     [SerializeField] private UnityEvent OnGamePause;
     [SerializeField] private UnityEvent OnGameResume;
+    [SerializeField] private GameObject _tree;
 
 
     private void Awake()
     {
         _poolManager.CreatePools();
         _resourceManager.AddCurrency(_levelData._level.InitialCurrency);
+        _tree.GetComponent<Health>().SetMaxHealth(_levelData._level.TreeHealth);
         GameManager.Instance.Brain = _levelBrain;
         GameManager.Instance.LevelManager = this;
     }
@@ -25,6 +28,12 @@ public class LevelManager : MonoBehaviour
     {
         GameManager.Instance.GameState = GameState.PLAY;
         Time.timeScale = 1;
+        StartCoroutine(WaitToStartWaves(_levelData._level.TimeBeforeAttack));
+    }
+
+    IEnumerator WaitToStartWaves(float time)
+    {
+        yield return new WaitForSeconds(time);
         OnGameStart?.Invoke();
     }
 

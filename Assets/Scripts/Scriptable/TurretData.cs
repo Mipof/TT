@@ -7,7 +7,7 @@ public class TurretData : ScriptableObject
    public struct Turret
    {
       public TurretType Type;
-      public float DamagePerHit;
+      public int DamagePerHit;
       public float Health;
       public int CostToBuild;
       public bool CanUpgrade;

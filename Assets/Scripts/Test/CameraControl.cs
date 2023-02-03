@@ -21,7 +21,6 @@ public class CameraControl : MonoBehaviour
 
     public void IncreaseCam()
     {
-        print("increasing");
         _activeCamera.Priority = 0;
         _cameraIndex++;
         if (_cameraIndex >= _listCamera.Length)
@@ -30,6 +29,7 @@ public class CameraControl : MonoBehaviour
         }
 
         _activeCamera = _listCamera[_cameraIndex];
+        UpdateCamera();
         _activeCamera.Priority = 1;
     }
 
@@ -41,8 +41,20 @@ public class CameraControl : MonoBehaviour
         {
             _cameraIndex = _listCamera.Length - 1;
         }
-
         _activeCamera = _listCamera[_cameraIndex];
+        UpdateCamera();
         _activeCamera.Priority = 1;
+    }
+
+    private void UpdateCamera()
+    {
+        if (_activeCamera.transform.TryGetComponent(out CameraProperties properties))
+        {
+            GameManager.Instance.ActualCamera = properties.GetCameraEnum();
+        }
+        else
+        {
+            throw new Exception("Camera " + _activeCamera.transform.name + "dont contain an cameraProperties script");
+        }
     }
 }

@@ -1,11 +1,10 @@
 using UnityEngine;
 
-
-public class TurretSlotManager : MonoBehaviour
+public class CameraProperties : MonoBehaviour
 {
     [SerializeField] private CameraEnum _camera;
 
-    public CameraEnum GetCamera()
+    public CameraEnum GetCameraEnum()
     {
         return _camera;
     }

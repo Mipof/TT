@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.04886065, g: 0.16153127, b: 0.21847035, a: 1}
+  m_IndirectSpecularColor: {r: 0.04891202, g: 0.16193388, b: 0.21870603, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -441,19 +441,19 @@ MonoBehaviour:
   _wave: {fileID: 11400000, guid: fe3bfb9dc8fef5043951695124538715, type: 2}
   _poolManager: {fileID: 11400000, guid: 0f8548e22c842f14d89b72aa40b7edd0, type: 2}
   _waypoints:
-  - {fileID: 1225449815}
-  - {fileID: 1071175266}
-  - {fileID: 590374432}
-  - {fileID: 728356287}
-  - {fileID: 1677870281}
-  - {fileID: 208797913}
-  - {fileID: 1840033724}
-  - {fileID: 1034834272}
-  - {fileID: 2125645124}
-  - {fileID: 1268077916}
-  - {fileID: 520747899}
-  - {fileID: 1056945167}
   - {fileID: 1494057954}
+  - {fileID: 1056945167}
+  - {fileID: 520747899}
+  - {fileID: 1268077916}
+  - {fileID: 2125645124}
+  - {fileID: 1034834272}
+  - {fileID: 1840033724}
+  - {fileID: 208797913}
+  - {fileID: 1677870281}
+  - {fileID: 728356287}
+  - {fileID: 590374432}
+  - {fileID: 1071175266}
+  - {fileID: 1225449815}
 --- !u!1001 &208797912
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -725,8 +725,9 @@ GameObject:
   m_Component:
   - component: {fileID: 330654338}
   - component: {fileID: 330654339}
+  - component: {fileID: 330654340}
   m_Layer: 0
-  m_Name: CM vcam1 (3)
+  m_Name: Cam4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -786,6 +787,19 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 816208729}
+--- !u!114 &330654340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330654337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4a7c794ff983fe4394526e23c0ca610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _camera: 3
 --- !u!1 &351660160
 GameObject:
   m_ObjectHideFlags: 0
@@ -906,8 +920,9 @@ GameObject:
   m_Component:
   - component: {fileID: 421643053}
   - component: {fileID: 421643054}
+  - component: {fileID: 421643055}
   m_Layer: 0
-  m_Name: CM vcam1 (1)
+  m_Name: Cam3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -967,6 +982,19 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 1501148917}
+--- !u!114 &421643055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421643052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4a7c794ff983fe4394526e23c0ca610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _camera: 2
 --- !u!1001 &435107638
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1368,8 +1396,9 @@ GameObject:
   m_Component:
   - component: {fileID: 548650670}
   - component: {fileID: 548650671}
+  - component: {fileID: 548650672}
   m_Layer: 0
-  m_Name: CM vcam1
+  m_Name: Cam1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1429,6 +1458,19 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 932983762}
+--- !u!114 &548650672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548650669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4a7c794ff983fe4394526e23c0ca610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _camera: 0
 --- !u!1001 &590374431
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1514,8 +1556,9 @@ GameObject:
   m_Component:
   - component: {fileID: 600239948}
   - component: {fileID: 600239949}
+  - component: {fileID: 600239950}
   m_Layer: 0
-  m_Name: CM vcam1 (2)
+  m_Name: Cam2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1575,6 +1618,19 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 459220940}
+--- !u!114 &600239950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600239947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4a7c794ff983fe4394526e23c0ca610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _camera: 1
 --- !u!1001 &643939576
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4143,19 +4199,19 @@ MonoBehaviour:
   _wave: {fileID: 11400000, guid: 701b5580d03ac7842bb09dfe39637186, type: 2}
   _poolManager: {fileID: 11400000, guid: 0f8548e22c842f14d89b72aa40b7edd0, type: 2}
   _waypoints:
-  - {fileID: 17636606}
-  - {fileID: 1731633119}
-  - {fileID: 1730108051}
-  - {fileID: 282605876}
-  - {fileID: 763980423}
-  - {fileID: 1483409505}
-  - {fileID: 268376555}
-  - {fileID: 1941555886}
-  - {fileID: 1688352427}
-  - {fileID: 803144604}
-  - {fileID: 1581535191}
-  - {fileID: 1269531903}
   - {fileID: 1275127520}
+  - {fileID: 1269531903}
+  - {fileID: 1581535191}
+  - {fileID: 803144604}
+  - {fileID: 1688352427}
+  - {fileID: 1941555886}
+  - {fileID: 268376555}
+  - {fileID: 1483409505}
+  - {fileID: 763980423}
+  - {fileID: 282605876}
+  - {fileID: 1730108051}
+  - {fileID: 1731633119}
+  - {fileID: 17636606}
 --- !u!4 &1480989657 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4466431753595620243, guid: b9bd8ddfe7f8c7c4c92a3a0a5213c8a2,
@@ -6155,6 +6211,8 @@ MonoBehaviour:
   X: 1
   Y: 0
   Z: 1
+  _lookAllTime: 1
+  _camera: 0
 --- !u!212 &2021816485
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     private GameState _gameState;
     private CinemachineBrain _brain;
     private LevelManager _levelManager;
+    private CameraEnum _actualCamera;
 
     private void Awake()
     {
@@ -50,5 +51,14 @@ public class GameManager : MonoBehaviour
     {
         get => _levelManager;
         set => _levelManager = value;
+    }
+
+    public CameraEnum ActualCamera
+    {
+        get => _actualCamera;
+        set
+        {
+            _actualCamera = value;
+        }
     }
 }

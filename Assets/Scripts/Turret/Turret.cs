@@ -1,9 +1,11 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 [RequireComponent(typeof(Damage))]
 [RequireComponent(typeof(Health))]
+[RequireComponent(typeof(LookAtCamera))]
 public class Turret : MonoBehaviour
 {
     [SerializeField] private float _offset;
@@ -14,18 +16,21 @@ public class Turret : MonoBehaviour
     [Space(20)] 
     [SerializeField] private UnityEvent OnRemove;
 
-    [SerializeField] private UnityEvent<TurretData> OnNewTurret;
+    [SerializeField] private UnityEvent<int> OnNewDamage;
 
     private int _indexUpgrade = 0;
     [SerializeField] private LevelManager _levelManager;
     [SerializeField] private float _waitToUpdate = 2;
     private Animator _liveAnimator;
     private bool _ready;
-    private bool _canUpdate = true;
+    private bool _canUpdate = false;
+    private LookAtCamera _lookAt;
 
     private void Awake()
     {
         _liveAnimator = GetComponent<Animator>();
+        _lookAt = GetComponent<LookAtCamera>();
+        OnNewDamage?.Invoke(_data[_indexUpgrade]._turret.DamagePerHit);
     }
 
     public void SetManager(LevelManager manager)
@@ -35,6 +40,11 @@ public class Turret : MonoBehaviour
     public float GetOffset()
     {
         return _offset;
+    }
+
+    public void FillLookAt(CameraEnum cameraEnum)
+    {
+        _lookAt.SetCamera(cameraEnum);
     }
 
     private void LateUpdate()
@@ -65,26 +75,27 @@ public class Turret : MonoBehaviour
             _canUpdate = false;
             _upgradeIcon.SetActive(false);
             _levelManager.ChargeTurret(_data[_indexUpgrade]._turret.CostToUpgrade);
-            StartCoroutine(CanUpdateDelay());
+            StartCoroutine(CanUpdateDelay(_waitToUpdate));
             _indexUpgrade++;
             if (_data[_indexUpgrade]._turret.IsAnimated)
             {
                 _liveAnimator.runtimeAnimatorController = _animations[_indexUpgrade];
             }
 
-            OnNewTurret?.Invoke(_data[_indexUpgrade]);
+            OnNewDamage?.Invoke(_data[_indexUpgrade]._turret.DamagePerHit);
         }
         
     }
 
-    IEnumerator CanUpdateDelay()
+    IEnumerator CanUpdateDelay(float delay)
     {
-        yield return new WaitForSeconds(_waitToUpdate);
+        yield return new WaitForSeconds(delay);
         _canUpdate = true;
     }
 
     public void SetReady()
     {
         _ready = true;
+        StartCoroutine(CanUpdateDelay(_waitToUpdate));
     }
 }

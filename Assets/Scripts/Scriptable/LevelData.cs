@@ -12,7 +12,8 @@ public class LevelData : ScriptableObject
         public string LevelDescription;
         public int TimeBeforeAttack;
         public int InitialCurrency;
-        
+        public int TreeHealth;
+
     }
     
 
