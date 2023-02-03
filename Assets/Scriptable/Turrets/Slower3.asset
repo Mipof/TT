@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: Slower3
   m_EditorClassIdentifier: 
   _turret:
-    Type: 0
-    DamagePerHit: 3
+    Type: 5
+    DamagePerHit: 4
     Health: 3
     CostToBuild: 3
     CanUpgrade: 0
     CostToUpgrade: 0
     IsAnimated: 0
+    Prefab: {fileID: 0}
+    sprite: {fileID: 0}

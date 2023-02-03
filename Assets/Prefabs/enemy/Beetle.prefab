@@ -12,6 +12,10 @@ GameObject:
   - component: {fileID: 725837009719303812}
   - component: {fileID: 5195130081050255721}
   - component: {fileID: 4429290498208267176}
+  - component: {fileID: -6953237669033356850}
+  - component: {fileID: 6807762865488826006}
+  - component: {fileID: -4439886256302598532}
+  - component: {fileID: 6951744729406527976}
   m_Layer: 0
   m_Name: Beetle
   m_TagString: Untagged
@@ -122,3 +126,67 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-6953237669033356850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5110552329264007300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 837e27a8dccb2a14ab3d2495d86c9a29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _actualHealth: 0
+  _shield: 0
+  OnZeroHealth:
+    m_PersistentCalls:
+      m_Calls: []
+  OnZeroShield:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &6807762865488826006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5110552329264007300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7cea2382d1d85468e6cab0cb8a5248, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _distanceThreshold: 0
+--- !u!114 &-4439886256302598532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5110552329264007300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62290b08bb8831f43a60fda7c2205f22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6951744729406527976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5110552329264007300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 142b6c8a2942501439adf2daab73be1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data: {fileID: 11400000, guid: 246b4df4a3dbb5e42afd0cfdbe342e6c, type: 2}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
+  OnBackToPool:
+    m_PersistentCalls:
+      m_Calls: []

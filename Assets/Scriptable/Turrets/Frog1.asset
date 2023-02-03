@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _turret:
     Type: 7
-    DamagePerHit: 1
-    Health: 1
-    CostToBuild: 1
+    DamagePerHit: 1000
+    Health: 10
+    CostToBuild: 60
     CanUpgrade: 1
-    CostToUpgrade: 1
+    CostToUpgrade: 110
     IsAnimated: 1
     Prefab: {fileID: 4503665503585472980, guid: f5f7718fe1407574e8c831c35e3d5939,
       type: 3}
