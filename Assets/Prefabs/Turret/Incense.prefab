@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed8abf2eb363a3e438497a9a22ed7fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _offset: 0
+  _offset: 120
   _data:
   - {fileID: 11400000, guid: c06ade452beadfd458ee90b675154ce4, type: 2}
   - {fileID: 11400000, guid: 9beb8e7167c9a4e43a341ee7a170851d, type: 2}
@@ -273,6 +273,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   _tagField: Enemy
+  _delay: 0
 --- !u!114 &626312133836925145
 MonoBehaviour:
   m_ObjectHideFlags: 0
