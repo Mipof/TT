@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2570414057891000039
 Transform:
   m_ObjectHideFlags: 0
@@ -271,7 +271,7 @@ MonoBehaviour:
   - {fileID: 9100000, guid: a752d28696e163d41be074e3c111495a, type: 2}
   - {fileID: 9100000, guid: 218c6c832adb90a4392381c7ab764a78, type: 2}
   - {fileID: 9100000, guid: 0103369f3c604764e9a33e370d947780, type: 2}
-  _upgradeIcon: {fileID: 7197794770128162622}
+  _upgradeIcon: {fileID: 2193041266077291043}
   OnRemove:
     m_PersistentCalls:
       m_Calls:
@@ -451,17 +451,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2453283793099867414, guid: 9edb5801e2d7db04397bb66368713ef4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9edb5801e2d7db04397bb66368713ef4, type: 3}
 --- !u!224 &6213464816239143076 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1716660898099487372, guid: 9edb5801e2d7db04397bb66368713ef4,
-    type: 3}
-  m_PrefabInstance: {fileID: 4749156486949079592}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &7197794770128162622 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2453283793099867414, guid: 9edb5801e2d7db04397bb66368713ef4,
     type: 3}
   m_PrefabInstance: {fileID: 4749156486949079592}
   m_PrefabAsset: {fileID: 0}
