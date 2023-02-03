@@ -15,20 +15,20 @@ MonoBehaviour:
   _waves:
   - WavaName: 1
     EnemyType: 0
-    Quantity: 10
+    Quantity: 5
     TimeDelay: 1
   - WavaName: 2
     EnemyType: 1
-    Quantity: 2
-    TimeDelay: 3
+    Quantity: 1
+    TimeDelay: 0
   - WavaName: 2
     EnemyType: 0
-    Quantity: 10
-    TimeDelay: 2
-  - WavaName: 3
-    EnemyType: 0
-    Quantity: 15
+    Quantity: 5
     TimeDelay: 1
+  - WavaName: 3
+    EnemyType: 2
+    Quantity: 1
+    TimeDelay: 0
   - WavaName: 3
     EnemyType: 1
     Quantity: 5
@@ -37,3 +37,11 @@ MonoBehaviour:
     EnemyType: 2
     Quantity: 2
     TimeDelay: 5
+  - WavaName: 3
+    EnemyType: 0
+    Quantity: 2
+    TimeDelay: 1
+  - WavaName: 3
+    EnemyType: 1
+    Quantity: 2
+    TimeDelay: 0
