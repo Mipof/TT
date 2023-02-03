@@ -14,6 +14,8 @@ public class LevelData : ScriptableObject
         public int InitialCurrency;
         
     }
+    
 
     public Level _level;
+    public TurretData[] _turrets;
 }

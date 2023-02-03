@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03dbb1ec6941b5b41b2727e22a99fd93, type: 3}
+  m_Name: Frog3
+  m_EditorClassIdentifier: 
+  _turret:
+    Type: 8
+    DamagePerHit: 1000
+    Health: 30
+    CostToBuild: 3
+    CanUpgrade: 0
+    CostToUpgrade: 0
+    IsAnimated: 1
+    Prefab: {fileID: 2018755670409060889, guid: 0e8679486c5015f4ea6de3e8adc3436c,
+      type: 3}
+    sprite: {fileID: 0}

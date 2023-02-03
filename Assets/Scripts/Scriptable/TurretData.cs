@@ -12,6 +12,9 @@ public class TurretData : ScriptableObject
       public int CostToBuild;
       public bool CanUpgrade;
       public int CostToUpgrade;
+      public bool IsAnimated;
+      public GameObject Prefab;
+      public Sprite sprite;
    }
 
    public Turret _turret;

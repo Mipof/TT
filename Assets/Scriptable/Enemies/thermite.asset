@@ -15,7 +15,7 @@ MonoBehaviour:
   _enemy:
     Type: 0
     Health: 100
-    Shield: 0
+    Shield: 5
     Speed: 60
     DamagePerHit: 10
     CurrencyOnDeath: 10
