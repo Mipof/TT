@@ -32,6 +32,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SetSlow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Test.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Test/CameraProperties.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TreeHpBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Turret/TurretIconSetter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WavesSpawner.cs" root0="FORCE_HIGHLIGHTING" />
@@ -118,7 +119,7 @@
       <workItem from="1675361322785" duration="457000" />
       <workItem from="1675361793604" duration="19940000" />
       <workItem from="1675396793450" duration="1779000" />
-      <workItem from="1675443753216" duration="12342000" />
+      <workItem from="1675443753216" duration="13183000" />
     </task>
     <servers />
   </component>

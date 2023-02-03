@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 4117524110759135112}
   - component: {fileID: 626312133836925145}
   - component: {fileID: 7701986252233411425}
+  - component: {fileID: -4344388222894870372}
   m_Layer: 0
   m_Name: Incense
   m_TagString: Untagged
@@ -166,7 +167,19 @@ MonoBehaviour:
   _sphereCollider: {fileID: 3095440937695926248}
   OnRemove:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -4344388222894870372}
+        m_TargetAssemblyTypeName: DestroyGameObject, Assembly-CSharp
+        m_MethodName: DestroyGO
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnNewDamage:
     m_PersistentCalls:
       m_Calls:
@@ -251,6 +264,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnEnemyEnterPosition:
+    m_PersistentCalls:
+      m_Calls: []
   OnEnemyExit:
     m_PersistentCalls:
       m_Calls:
@@ -299,6 +315,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &-4344388222894870372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676725151591290639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df1996d5f261a254ab7748f123c15b5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _timeBeforeDestroy: 0
+  OnDestroy:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &2776885329093712162
 PrefabInstance:
   m_ObjectHideFlags: 0
