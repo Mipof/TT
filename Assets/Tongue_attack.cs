@@ -23,9 +23,9 @@ public class Tongue_attack : MonoBehaviour
         
     }
 
-    public void tongue (Vector3 position)
+    public void tongue (Transform transform)
     {
-        line.SetPosition(0, position);
+        line.SetPosition(0, transform.position);
     }
 
     public void tongueoriginalpos ()
