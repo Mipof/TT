@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65478482825ff2b479d746f006a58706, type: 3}
+  m_Name: LV1 R1
+  m_EditorClassIdentifier: 
+  _waves:
+  - WavaName: 1
+    EnemyType: 0
+    Quantity: 9
+    TimeDelay: 0.75
+  - WavaName: 1
+    EnemyType: 0
+    Quantity: 1
+    TimeDelay: 5
+  - WavaName: 2
+    EnemyType: 0
+    Quantity: 6
+    TimeDelay: 0.75
+  - WavaName: 2
+    EnemyType: 1
+    Quantity: 1
+    TimeDelay: 0
+  - WavaName: 2
+    EnemyType: 0
+    Quantity: 6
+    TimeDelay: 0.75
+  - WavaName: 2
+    EnemyType: 1
+    Quantity: 1
+    TimeDelay: 5
+  - WavaName: 3
+    EnemyType: 0
+    Quantity: 4
+    TimeDelay: 1
+  - WavaName: 3
+    EnemyType: 1
+    Quantity: 1
+    TimeDelay: 0
+  - WavaName: 3
+    EnemyType: 0
+    Quantity: 4
+    TimeDelay: 1
+  - WavaName: 3
+    EnemyType: 1
+    Quantity: 1
+    TimeDelay: 0
+  - WavaName: 3
+    EnemyType: 0
+    Quantity: 4
+    TimeDelay: 1
+  - WavaName: 3
+    EnemyType: 2
+    Quantity: 2
+    TimeDelay: 1
+  - WavaName: 3
+    EnemyType: 0
+    Quantity: 4
+    TimeDelay: 1
+  - WavaName: 3
+    EnemyType: 1
+    Quantity: 2
+    TimeDelay: 1

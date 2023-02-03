@@ -38,4 +38,19 @@ public class LevelManager : MonoBehaviour
     {
         _resourceManager.AddCurrency(currency);
     }
+
+    public bool CanUpgrade(int cost)
+    {
+        return _resourceManager.CanPurchase(cost);
+    }
+
+    public LevelData GetData()
+    {
+        return _levelData;
+    }
+
+    public void ChargeTurret(int amount)
+    {
+        _resourceManager.Purchase(amount);
+    }
 }
