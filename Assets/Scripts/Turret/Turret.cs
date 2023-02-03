@@ -103,6 +103,10 @@ public class Turret : MonoBehaviour
 
     public void SetReady()
     {
+        if (_sphereCollider)
+        {
+            _sphereCollider.enabled = true;
+        }
         _ready = true;
         StartCoroutine(CanUpdateDelay(_waitToUpdate));
     }
