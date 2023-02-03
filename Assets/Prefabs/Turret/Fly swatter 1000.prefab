@@ -210,6 +210,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _levelManager: {fileID: 0}
+  _waitToUpdate: 2
 --- !u!1001 &8424374663083322695
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -217,6 +219,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3849308500218154334}
     m_Modifications:
+    - target: {fileID: 235944470898238760, guid: 9edb5801e2d7db04397bb66368713ef4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000030517578
+      objectReference: {fileID: 0}
     - target: {fileID: 856193725732701652, guid: 9edb5801e2d7db04397bb66368713ef4,
         type: 3}
       propertyPath: m_Name
