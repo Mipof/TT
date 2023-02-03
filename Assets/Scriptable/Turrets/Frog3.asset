@@ -16,7 +16,7 @@ MonoBehaviour:
     Type: 8
     DamagePerHit: 1000
     Health: 30
-    CostToBuild: 3
+    CostToBuild: 170
     CanUpgrade: 0
     CostToUpgrade: 0
     IsAnimated: 1

@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _turret:
     Type: 1
-    DamagePerHit: 12
+    DamagePerHit: 8
     Health: 2
-    CostToBuild: 2
+    CostToBuild: 50
     CanUpgrade: 1
     CostToUpgrade: 90
     IsAnimated: 1
