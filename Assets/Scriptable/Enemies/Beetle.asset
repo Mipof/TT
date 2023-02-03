@@ -16,6 +16,6 @@ MonoBehaviour:
     Type: 2
     Health: 75
     Shield: 20
-    Speed: 30
+    Speed: 37.5
     DamagePerHit: 20
     CurrencyOnDeath: 18

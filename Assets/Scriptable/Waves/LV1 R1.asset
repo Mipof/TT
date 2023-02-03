@@ -16,15 +16,15 @@ MonoBehaviour:
   - WavaName: 1
     EnemyType: 0
     Quantity: 9
-    TimeDelay: 0.75
+    TimeDelay: 1
   - WavaName: 1
     EnemyType: 0
     Quantity: 1
-    TimeDelay: 5
+    TimeDelay: 10
   - WavaName: 2
     EnemyType: 0
     Quantity: 6
-    TimeDelay: 0.75
+    TimeDelay: 1
   - WavaName: 2
     EnemyType: 1
     Quantity: 1
@@ -32,7 +32,7 @@ MonoBehaviour:
   - WavaName: 2
     EnemyType: 0
     Quantity: 6
-    TimeDelay: 0.75
+    TimeDelay: 1
   - WavaName: 2
     EnemyType: 1
     Quantity: 1

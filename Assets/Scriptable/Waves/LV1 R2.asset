@@ -9,13 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7e1b7668ef6625458b4f42956418165, type: 3}
-  m_Name: Grasshopper
+  m_Script: {fileID: 11500000, guid: 65478482825ff2b479d746f006a58706, type: 3}
+  m_Name: LV1 R2
   m_EditorClassIdentifier: 
-  _enemy:
-    Type: 1
-    Health: 20
-    Shield: 0
-    Speed: 150
-    DamagePerHit: 10
-    CurrencyOnDeath: 6
+  _waves:
+  - WavaName: 1
+    EnemyType: 0
+    Quantity: 10
+    TimeDelay: 0.4

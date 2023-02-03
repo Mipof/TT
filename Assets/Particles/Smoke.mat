@@ -26,6 +26,7 @@ Material:
   - _ALPHABLEND_ON
   - _COLOROVERLAY_ON
   - _EMISSION
+  - _REQUIRE_UV2
   m_InvalidKeywords: []
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -150,15 +151,15 @@ Material:
     - _DecalMeshViewBias: 0
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _DistortionBlend: 0.5
+    - _DistortionBlend: 0.25
     - _DistortionEnabled: 0
-    - _DistortionStrength: 1
-    - _DistortionStrengthScaled: 0.1
+    - _DistortionStrength: 10
+    - _DistortionStrengthScaled: 1
     - _DrawOrder: 0
     - _DstBlend: 10
     - _EmissionEnabled: 1
     - _EnvironmentReflections: 1
-    - _FlipbookMode: 0
+    - _FlipbookMode: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
