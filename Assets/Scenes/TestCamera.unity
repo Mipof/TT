@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.981
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.04798701, g: 0.15886109, b: 0.21455777, a: 0.981}
+  m_IndirectSpecularColor: {r: 0.04798269, g: 0.15885714, b: 0.21455061, a: 0.981}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -234,7 +234,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d941368ab81de9142bb9a7c14b233ca7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _brain: {fileID: 0}
+  X: 0
+  Y: 0
+  Z: 0
 --- !u!1 &77222058
 GameObject:
   m_ObjectHideFlags: 0
@@ -1085,7 +1087,7 @@ PrefabInstance:
     - target: {fileID: 3662640556434499277, guid: 3a9113b4d98342043bf93c47bbf20ae1,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3662640556434499277, guid: 3a9113b4d98342043bf93c47bbf20ae1,
         type: 3}
@@ -1190,7 +1192,7 @@ Transform:
   - {fileID: 1731800090}
   - {fileID: 1360797431404154856}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &594348871 stripped
 Transform:
@@ -1264,7 +1266,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &836584631 stripped
 Transform:
@@ -1383,7 +1385,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d941368ab81de9142bb9a7c14b233ca7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _brain: {fileID: 77222063}
+  X: 0
+  Y: 0
+  Z: 0
 --- !u!4 &1117072824 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1093199550714830841, guid: 7e6c7e2e54726124e9bb3a4e8b73ebb6,
@@ -1810,7 +1814,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f42f67a1ee501384193dc4a9aba03e85, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ad17a847b3306a243a843de38bb27bf7, type: 3}
   m_Color: {r: 0.40784317, g: 0.3803922, b: 0.36078432, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1861,7 +1865,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d941368ab81de9142bb9a7c14b233ca7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _brain: {fileID: 77222063}
+  X: 0
+  Y: 0
+  Z: 0
 --- !u!4 &1731800090 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8014857611221672353, guid: cb97e9ecc2fbe114490a67d1df41302a,
@@ -2203,7 +2209,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d941368ab81de9142bb9a7c14b233ca7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _brain: {fileID: 77222063}
+  X: 0
+  Y: 0
+  Z: 0
 --- !u!1 &1980304137
 GameObject:
   m_ObjectHideFlags: 0
@@ -2315,7 +2323,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d941368ab81de9142bb9a7c14b233ca7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _brain: {fileID: 77222063}
+  X: 0
+  Y: 0
+  Z: 0
 --- !u!1 &2011069434
 GameObject:
   m_ObjectHideFlags: 0
@@ -2599,7 +2609,7 @@ PrefabInstance:
     - target: {fileID: 4467825939761321112, guid: 18ba6ff7e2844c84a8516375b987385f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4467825939761321112, guid: 18ba6ff7e2844c84a8516375b987385f,
         type: 3}
@@ -2942,6 +2952,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 583918425}
     m_Modifications:
+    - target: {fileID: 2379520366403582879, guid: 7a257cf06272f6841aacf58b550950d2,
+        type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2614038386316109477, guid: 7a257cf06272f6841aacf58b550950d2,
         type: 3}
       propertyPath: m_Name
