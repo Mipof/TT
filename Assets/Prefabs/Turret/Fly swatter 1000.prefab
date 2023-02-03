@@ -141,8 +141,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 39.15, y: 5.56, z: 22.5}
-  m_Center: {x: 0, y: -5.2, z: 0}
+  m_Size: {x: 40, y: 5, z: 5}
+  m_Center: {x: 0, y: -5, z: 0}
 --- !u!114 &676737514967308253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,6 +198,7 @@ MonoBehaviour:
   - {fileID: 9100000, guid: a91cbee3269760e4ca64505dd3ed8fb2, type: 2}
   - {fileID: 9100000, guid: 5cd02d83289b39c4d98570fdaa56994f, type: 2}
   _upgradeIcon: {fileID: 4018468425075689154}
+  _sphereCollider: {fileID: 0}
   OnRemove:
     m_PersistentCalls:
       m_Calls: []
@@ -216,6 +217,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnNewStatus:
+    m_PersistentCalls:
+      m_Calls: []
   _levelManager: {fileID: 0}
   _waitToUpdate: 2
 --- !u!114 &-4671315067164649560
@@ -245,6 +249,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnEnemyEnterPosition:
+    m_PersistentCalls:
+      m_Calls: []
+  OnEnemyExit:
+    m_PersistentCalls:
+      m_Calls: []
   _tagField: Enemy
 --- !u!1001 &36649946981058029
 PrefabInstance:

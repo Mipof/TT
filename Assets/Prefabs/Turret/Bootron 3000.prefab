@@ -103,6 +103,7 @@ MonoBehaviour:
   Y: 1
   Z: 0
   _lookAllTime: 0
+  _off: 0
   _camera: 0
 --- !u!95 &8616332736915927632
 Animator:
@@ -135,5 +136,5 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 35.2, y: 11.4, z: 15.3}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 40, y: 5, z: 10}
+  m_Center: {x: 0, y: -5, z: 0}
