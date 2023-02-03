@@ -24,8 +24,32 @@ MonoBehaviour:
   - WavaName: 1
     EnemyType: 0
     Quantity: 1
-    TimeDelay: 37.5
+    TimeDelay: 43.75
   - WavaName: 2
     EnemyType: 0
-    Quantity: 5
+    Quantity: 3
     TimeDelay: 1
+  - WavaName: 2
+    EnemyType: 1
+    Quantity: 1
+    TimeDelay: 0
+  - WavaName: 2
+    EnemyType: 0
+    Quantity: 3
+    TimeDelay: 1
+  - WavaName: 2
+    EnemyType: 1
+    Quantity: 1
+    TimeDelay: 0
+  - WavaName: 2
+    EnemyType: 0
+    Quantity: 3
+    TimeDelay: 1
+  - WavaName: 2
+    EnemyType: 1
+    Quantity: 1
+    TimeDelay: 0
+  - WavaName: 2
+    EnemyType: 0
+    Quantity: 1
+    TimeDelay: 43.75

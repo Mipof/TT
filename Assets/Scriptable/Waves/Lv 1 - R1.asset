@@ -20,10 +20,10 @@ MonoBehaviour:
   - WavaName: 1
     EnemyType: 0
     Quantity: 1
-    TimeDelay: 37.5
+    TimeDelay: 43.75
   - WavaName: 2
     EnemyType: 0
-    Quantity: 5
+    Quantity: 3
     TimeDelay: 1
   - WavaName: 2
     EnemyType: 1
@@ -31,24 +31,24 @@ MonoBehaviour:
     TimeDelay: 0
   - WavaName: 2
     EnemyType: 0
-    Quantity: 5
+    Quantity: 3
     TimeDelay: 1
   - WavaName: 2
     EnemyType: 1
     Quantity: 1
-    TimeDelay: 50
-  - WavaName: 3
+    TimeDelay: 0
+  - WavaName: 2
     EnemyType: 0
-    Quantity: 4
+    Quantity: 3
     TimeDelay: 1
-  - WavaName: 3
+  - WavaName: 2
     EnemyType: 1
     Quantity: 1
     TimeDelay: 0
-  - WavaName: 3
+  - WavaName: 2
     EnemyType: 0
-    Quantity: 4
-    TimeDelay: 1
+    Quantity: 1
+    TimeDelay: 43.75
   - WavaName: 3
     EnemyType: 1
     Quantity: 1
