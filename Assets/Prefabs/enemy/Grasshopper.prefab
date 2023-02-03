@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 8596360256368004595}
   - component: {fileID: 563689859248409365}
   - component: {fileID: -1581065406854022108}
+  - component: {fileID: 4957975956945143115}
   m_Layer: 0
   m_Name: Grasshopper
   m_TagString: Enemy
@@ -327,3 +328,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 0
+--- !u!65 &4957975956945143115
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2202477200903156702}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 27.324455, y: 20.48, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}

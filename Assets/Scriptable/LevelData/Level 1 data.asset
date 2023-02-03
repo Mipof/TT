@@ -17,5 +17,8 @@ MonoBehaviour:
     LevelDescription: 
     TimeBeforeAttack: 10
     InitialCurrency: 100
+    TreeHealth: 100
   _turrets:
+  - {fileID: 11400000, guid: 9998f8e427760d047920b1da38425b2e, type: 2}
+  - {fileID: 11400000, guid: c06ade452beadfd458ee90b675154ce4, type: 2}
   - {fileID: 11400000, guid: 8011120fa6ace9a47b014f57261367bc, type: 2}
