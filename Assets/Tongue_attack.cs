@@ -1,18 +1,28 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Tongue_attack : MonoBehaviour
 {
 
-    LineRenderer line;
-    Vector3 originalpos = new Vector3(540.6785f, -6.339138f, 1.0f);
+    [SerializeField] private LineRenderer _line;
+    [SerializeField] private float _delay;
+    private Vector3 originalpos = new Vector3(540.6785f, -6.339138f, 1.0f);
    
-    public void tongue (GameObject go)
+    public void TongueAtack (Transform _transform)
     {
-        line.SetPosition(0, go.transform.position);
+        _line.SetPosition(0, _transform.position);
+        StartCoroutine(DelayForTongue(_delay));
     }
 
-    public void tongueoriginalpos ()
+    IEnumerator DelayForTongue(float delay)
     {
-        line.SetPosition(0, originalpos);
+        yield return new WaitForSeconds(delay);
+        TongueOriginalPos();
+    }
+
+    public void TongueOriginalPos()
+    {
+        _line.SetPosition(0, originalpos);
     }
 }
