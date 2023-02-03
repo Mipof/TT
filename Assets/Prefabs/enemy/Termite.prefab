@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 6280172262745248655}
   m_Layer: 0
   m_Name: Termite
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa7cea2382d1d85468e6cab0cb8a5248, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _distanceThreshold: 0
+  _distanceThreshold: 50
 --- !u!114 &-864112686686735876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,7 +197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 142b6c8a2942501439adf2daab73be1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _data: {fileID: 11400000, guid: 898b70c5f573b70408458ac08f79ffe7, type: 2}
+  _data: {fileID: 11400000, guid: f1f886b349038a1469ef6f54c9444f79, type: 2}
   OnDeath:
     m_PersistentCalls:
       m_Calls:

@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 4671870315631424760}
   m_Layer: 0
   m_Name: Grasshopper
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa7cea2382d1d85468e6cab0cb8a5248, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _distanceThreshold: 0
+  _distanceThreshold: 50
 --- !u!114 &-7833055323524728731
 MonoBehaviour:
   m_ObjectHideFlags: 0
