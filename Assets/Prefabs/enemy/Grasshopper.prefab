@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -9132964326988189327}
   - component: {fileID: -7833055323524728731}
   - component: {fileID: 4671870315631424760}
+  - component: {fileID: 283929074872980987}
   m_Layer: 0
   m_Name: Grasshopper
   m_TagString: Enemy
@@ -142,7 +143,19 @@ MonoBehaviour:
   _shield: 0
   OnZeroHealth:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4671870315631424760}
+        m_TargetAssemblyTypeName: Enemy, Assembly-CSharp
+        m_MethodName: DisableGO
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnZeroShield:
     m_PersistentCalls:
       m_Calls: []
@@ -199,6 +212,42 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 283929074872980987}
+        m_TargetAssemblyTypeName: CurrencyOnDeath, Assembly-CSharp
+        m_MethodName: SendCurrency
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnBackToPool:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -9132964326988189327}
+        m_TargetAssemblyTypeName: FollowWaypoint, Assembly-CSharp
+        m_MethodName: SetNotReady
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &283929074872980987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2202477200903156702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d616456bfa38f7949bc070669a817211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
