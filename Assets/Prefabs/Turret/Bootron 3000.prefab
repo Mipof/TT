@@ -13,6 +13,9 @@ GameObject:
   - component: {fileID: 4269734393848972306}
   - component: {fileID: 8616332736915927632}
   - component: {fileID: 1552299799411718239}
+  - component: {fileID: 6791625863497386191}
+  - component: {fileID: -8469444216052250347}
+  - component: {fileID: 356786894421057006}
   m_Layer: 0
   m_Name: Bootron 3000
   m_TagString: Untagged
@@ -78,7 +81,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 823c300ff9ec4c847b2ef72d3ed3254c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 27.324455, y: 20.48}
@@ -99,8 +102,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d941368ab81de9142bb9a7c14b233ca7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  X: 0
-  Y: 1
+  X: 1
+  Y: 0
   Z: 0
   _lookAllTime: 0
   _off: 0
@@ -138,3 +141,64 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 40, y: 5, z: 10}
   m_Center: {x: 0, y: -5, z: 0}
+--- !u!114 &6791625863497386191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4269734393848972310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e269b3e02a4ecb54f907d0906869726f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damage: 0
+--- !u!114 &-8469444216052250347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4269734393848972310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 837e27a8dccb2a14ab3d2495d86c9a29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _actualHealth: 0
+  _shield: 0
+  OnZeroHealth:
+    m_PersistentCalls:
+      m_Calls: []
+  OnZeroShield:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &356786894421057006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4269734393848972310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed8abf2eb363a3e438497a9a22ed7fdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _offset: 120
+  _data: []
+  _animations: []
+  _upgradeIcon: {fileID: 0}
+  _sphereCollider: {fileID: 0}
+  OnRemove:
+    m_PersistentCalls:
+      m_Calls: []
+  OnNewDamage:
+    m_PersistentCalls:
+      m_Calls: []
+  OnNewStatus:
+    m_PersistentCalls:
+      m_Calls: []
+  _levelManager: {fileID: 0}
+  _waitToUpdate: 2
