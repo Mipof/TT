@@ -64,6 +64,7 @@ public class Turret : MonoBehaviour
         {
             _canUpdate = false;
             _upgradeIcon.SetActive(false);
+            _levelManager.ChargeTurret(_data[_indexUpgrade]._turret.CostToUpgrade);
             StartCoroutine(CanUpdateDelay());
             _indexUpgrade++;
             if (_data[_indexUpgrade]._turret.IsAnimated)

@@ -48,4 +48,9 @@ public class LevelManager : MonoBehaviour
     {
         return _levelData;
     }
+
+    public void ChargeTurret(int amount)
+    {
+        _resourceManager.Purchase(amount);
+    }
 }

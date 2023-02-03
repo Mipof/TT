@@ -32,11 +32,11 @@ public class GrabTurret : MonoBehaviour
                 _turretOffset = turret.GetOffset();
             }
 
-            StartCoroutine(HeldTurretRoutine());
+            StartCoroutine(HeldTurretRoutine(data));
         }
     }
 
-    IEnumerator HeldTurretRoutine()
+    IEnumerator HeldTurretRoutine(TurretData data)
     {
         while (_heldTurret)
         {
@@ -64,9 +64,13 @@ public class GrabTurret : MonoBehaviour
                     if (_heldTurret.TryGetComponent(out Turret turret))
                     {
                         turret.SetReady();
+                        _levelManager.ChargeTurret(data._turret.CostToBuild);
                     }
                     _heldTurret.transform.localScale = new Vector3(0.1f,4f, 0.1f);
+                    
                     _heldTurret = null;
+                    
+                    
                 }
 
                 if (Input.GetMouseButton(1))

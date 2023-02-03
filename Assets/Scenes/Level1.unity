@@ -2639,6 +2639,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _turretShopButton: {fileID: 321987895}
   _turretCatalog: {fileID: 1024003169}
+  _pauseMenu: {fileID: 5831427357624327451}
 --- !u!4 &1880559421
 Transform:
   m_ObjectHideFlags: 0
@@ -3233,6 +3234,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 731134772900614879, guid: 400a98bbb041c6646a5a289683800d17,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5831427357222541693, guid: 400a98bbb041c6646a5a289683800d17,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -3390,6 +3396,12 @@ PrefabInstance:
       objectReference: {fileID: 543835590}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 400a98bbb041c6646a5a289683800d17, type: 3}
+--- !u!1 &5831427357624327451 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 731134772900614879, guid: 400a98bbb041c6646a5a289683800d17,
+    type: 3}
+  m_PrefabInstance: {fileID: 5831427357624327450}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6858870014950865321
 PrefabInstance:
   m_ObjectHideFlags: 0
