@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _enemy:
     Type: 2
-    Health: 95
+    Health: 75
     Shield: 0
     Speed: 37.5
     DamagePerHit: 20
