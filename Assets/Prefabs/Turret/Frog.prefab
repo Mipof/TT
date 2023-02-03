@@ -187,6 +187,7 @@ MonoBehaviour:
   - {fileID: 9100000, guid: 218c6c832adb90a4392381c7ab764a78, type: 2}
   - {fileID: 9100000, guid: 0103369f3c604764e9a33e370d947780, type: 2}
   _upgradeIcon: {fileID: 8382048021273995896}
+  _sphereCollider: {fileID: 0}
   OnRemove:
     m_PersistentCalls:
       m_Calls: []
@@ -205,6 +206,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnNewStatus:
+    m_PersistentCalls:
+      m_Calls: []
   _levelManager: {fileID: 0}
   _waitToUpdate: 2
 --- !u!114 &-2770300065222413967
@@ -235,17 +239,20 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 5374288943517717036}
-        m_TargetAssemblyTypeName: Damage, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
+        m_TargetAssemblyTypeName: Tongue_attack, Assembly-CSharp
+        m_MethodName: tongue
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnEnemyExit:
+    m_PersistentCalls:
+      m_Calls: []
   _tagField: Enemy
 --- !u!65 &7067578727595095724
 BoxCollider:

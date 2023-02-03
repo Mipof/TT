@@ -7,7 +7,6 @@ public class Damage : MonoBehaviour
 
     public void SendDamage(GameObject target)
     {
-        print("Damage");
         if (target.TryGetComponent(out Health health))
         {
             health.GetDamage(_damage);
