@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3849308500218154334}
   - component: {fileID: 2972448787688109999}
-  - component: {fileID: 1862303194886294395}
   - component: {fileID: 2359230199268306218}
+  - component: {fileID: 1862303194886294395}
   - component: {fileID: 3844674290109760296}
   - component: {fileID: 676737514967308253}
   - component: {fileID: 6567498049099028788}
@@ -93,6 +93,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2359230199268306218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2614038386316109477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d941368ab81de9142bb9a7c14b233ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  X: 1
+  Y: 0
+  Z: 0
+  _lookAllTime: 0
+  _off: 0
+  _camera: 0
 --- !u!95 &1862303194886294395
 Animator:
   serializedVersion: 5
@@ -113,24 +131,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &2359230199268306218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2614038386316109477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d941368ab81de9142bb9a7c14b233ca7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  X: 1
-  Y: 0
-  Z: 0
-  _lookAllTime: 0
-  _off: 0
-  _camera: 0
 --- !u!65 &3844674290109760296
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed8abf2eb363a3e438497a9a22ed7fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _offset: 0
+  _offset: 120
   _data:
   - {fileID: 11400000, guid: 9998f8e427760d047920b1da38425b2e, type: 2}
   - {fileID: 11400000, guid: 28ef8e1b4875fa0409f65e87aa986ee6, type: 2}
@@ -269,6 +269,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _tagField: Enemy
+  _delay: 0
 --- !u!114 &-1819496002585280521
 MonoBehaviour:
   m_ObjectHideFlags: 0
