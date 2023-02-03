@@ -14,13 +14,13 @@ GameObject:
   - component: {fileID: 8446200905433856961}
   - component: {fileID: 5436447735237529266}
   - component: {fileID: 2327276013264153423}
-  - component: {fileID: 3095440937695926248}
   - component: {fileID: 4117524110759135112}
   - component: {fileID: 626312133836925145}
   - component: {fileID: 7701986252233411425}
+  - component: {fileID: -4344388222894870372}
   m_Layer: 0
   m_Name: Incense
-  m_TagString: Untagged
+  m_TagString: Turret
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38,6 +38,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3173902714166224585}
+  - {fileID: 1092390615332346615}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -161,12 +162,27 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c06ade452beadfd458ee90b675154ce4, type: 2}
   - {fileID: 11400000, guid: 9beb8e7167c9a4e43a341ee7a170851d, type: 2}
   - {fileID: 11400000, guid: 26ef2dde67343bb4b952e3a9140ccb26, type: 2}
-  _animations: []
+  _animations:
+  - {fileID: 9100000, guid: 87f0407de968aa94cb2d38479b7f098a, type: 2}
+  - {fileID: 9100000, guid: f669277003797604a8f03795f57bab38, type: 2}
+  - {fileID: 9100000, guid: 0dd5761b9319a0045be85762f3998c56, type: 2}
   _upgradeIcon: {fileID: 1283307287775713805}
-  _sphereCollider: {fileID: 3095440937695926248}
+  _sphereCollider: {fileID: 899392969373472977}
   OnRemove:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -4344388222894870372}
+        m_TargetAssemblyTypeName: DestroyGameObject, Assembly-CSharp
+        m_MethodName: DestroyGO
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnNewDamage:
     m_PersistentCalls:
       m_Calls:
@@ -199,19 +215,6 @@ MonoBehaviour:
         m_CallState: 2
   _levelManager: {fileID: 0}
   _waitToUpdate: 2
---- !u!135 &3095440937695926248
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 676725151591290639}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 70
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &4117524110759135112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -302,6 +305,67 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &-4344388222894870372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676725151591290639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df1996d5f261a254ab7748f123c15b5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _timeBeforeDestroy: 0
+  OnDestroy:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &2829390195151979071
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1092390615332346615}
+  - component: {fileID: 899392969373472977}
+  m_Layer: 2
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1092390615332346615
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2829390195151979071}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 676725151591290637}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &899392969373472977
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2829390195151979071}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: 70
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2776885329093712162
 PrefabInstance:
   m_ObjectHideFlags: 0

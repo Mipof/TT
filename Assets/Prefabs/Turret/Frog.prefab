@@ -19,9 +19,10 @@ GameObject:
   - component: {fileID: 7067578727595095724}
   - component: {fileID: 737154488296237688}
   - component: {fileID: 5374288943517717036}
+  - component: {fileID: -6268826123882969293}
   m_Layer: 0
   m_Name: Frog
-  m_TagString: Untagged
+  m_TagString: Turret
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -190,7 +191,19 @@ MonoBehaviour:
   _sphereCollider: {fileID: 0}
   OnRemove:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -6268826123882969293}
+        m_TargetAssemblyTypeName: DestroyGameObject, Assembly-CSharp
+        m_MethodName: DestroyGO
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnNewDamage:
     m_PersistentCalls:
       m_Calls:
@@ -312,12 +325,12 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: 541.023, y: 26.749456, z: 1}
-  - {x: 542.91864, y: 27.602743, z: 1}
-  - {x: 544.4289, y: 28.329584, z: 1}
+  - {x: 612.7583, y: -2.5148506, z: 1}
+  - {x: 621.7923, y: 1.0995598, z: 1}
+  - {x: 624.19574, y: 2.2177505, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 1.9811038
+    widthMultiplier: 10.532514
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -384,6 +397,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _line: {fileID: 737154488296237688}
   _delay: 0.3
+--- !u!114 &-6268826123882969293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8014857611221672364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df1996d5f261a254ab7748f123c15b5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _timeBeforeDestroy: 0
+  OnDestroy:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &9201641201793118124
 PrefabInstance:
   m_ObjectHideFlags: 0
