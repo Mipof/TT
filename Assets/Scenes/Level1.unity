@@ -4311,19 +4311,20 @@ MonoBehaviour:
   _wave: {fileID: 11400000, guid: 701b5580d03ac7842bb09dfe39637186, type: 2}
   _poolManager: {fileID: 11400000, guid: 0f8548e22c842f14d89b72aa40b7edd0, type: 2}
   _waypoints:
-  - {fileID: 2118823348}
-  - {fileID: 548858479}
-  - {fileID: 580704565}
-  - {fileID: 289703133}
-  - {fileID: 128655675}
-  - {fileID: 601108375}
-  - {fileID: 1934103669}
-  - {fileID: 1339761744}
-  - {fileID: 521628040}
-  - {fileID: 1804036467}
-  - {fileID: 1972975303}
-  - {fileID: 210469609}
   - {fileID: 741018093}
+  - {fileID: 210469609}
+  - {fileID: 1972975303}
+  - {fileID: 1804036467}
+  - {fileID: 521628040}
+  - {fileID: 1339761744}
+  - {fileID: 1934103669}
+  - {fileID: 601108375}
+  - {fileID: 601108375}
+  - {fileID: 128655675}
+  - {fileID: 289703133}
+  - {fileID: 580704565}
+  - {fileID: 548858479}
+  - {fileID: 2118823348}
 --- !u!4 &1455698540 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4466431753595620243, guid: b9bd8ddfe7f8c7c4c92a3a0a5213c8a2,
