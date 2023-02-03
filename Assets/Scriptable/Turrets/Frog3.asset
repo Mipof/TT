@@ -15,11 +15,14 @@ MonoBehaviour:
   _turret:
     Type: 8
     DamagePerHit: 1000
+    StatusValue: 3
     Health: 30
     CostToBuild: 170
     CanUpgrade: 0
     CostToUpgrade: 0
     IsAnimated: 1
+    Delay: 0
     Prefab: {fileID: 2018755670409060889, guid: 0e8679486c5015f4ea6de3e8adc3436c,
       type: 3}
     sprite: {fileID: 0}
+    area: 0

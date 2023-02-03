@@ -22,7 +22,7 @@ public class GrabTurret : MonoBehaviour
 
     public void GrabATurret(TurretData data)
     {
-        if (!_heldTurret)
+        if (!_heldTurret && _levelManager.CanUpgrade(data._turret.CostToBuild))
         {
             _ui.CloseCatalog();
             _heldTurret = Instantiate(data._turret.Prefab);
