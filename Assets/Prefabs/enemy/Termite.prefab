@@ -13,9 +13,13 @@ GameObject:
   - component: {fileID: 5641623131936993771}
   - component: {fileID: 6961389725808642141}
   - component: {fileID: 8489799453868855905}
+  - component: {fileID: 1207349168219860380}
+  - component: {fileID: -402876006026764650}
+  - component: {fileID: -864112686686735876}
+  - component: {fileID: 6280172262745248655}
   m_Layer: 0
   m_Name: Termite
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -136,3 +140,79 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1207349168219860380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8169320908573551320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 837e27a8dccb2a14ab3d2495d86c9a29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _actualHealth: 0
+  _shield: 0
+  OnZeroHealth:
+    m_PersistentCalls:
+      m_Calls: []
+  OnZeroShield:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-402876006026764650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8169320908573551320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7cea2382d1d85468e6cab0cb8a5248, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _distanceThreshold: 50
+--- !u!114 &-864112686686735876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8169320908573551320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62290b08bb8831f43a60fda7c2205f22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6280172262745248655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8169320908573551320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 142b6c8a2942501439adf2daab73be1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data: {fileID: 11400000, guid: 898b70c5f573b70408458ac08f79ffe7, type: 2}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2100000, guid: 39985f520a271a84883bb1c9b2923d73, type: 2}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnBackToPool:
+    m_PersistentCalls:
+      m_Calls: []

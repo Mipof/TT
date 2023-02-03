@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 6951744729406527976}
   m_Layer: 0
   m_Name: Beetle
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,7 +142,19 @@ MonoBehaviour:
   _shield: 0
   OnZeroHealth:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2100000, guid: 39985f520a271a84883bb1c9b2923d73, type: 2}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnZeroShield:
     m_PersistentCalls:
       m_Calls: []
@@ -158,7 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa7cea2382d1d85468e6cab0cb8a5248, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _distanceThreshold: 0
+  _distanceThreshold: 50
 --- !u!114 &-4439886256302598532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,7 +198,19 @@ MonoBehaviour:
   _data: {fileID: 11400000, guid: 246b4df4a3dbb5e42afd0cfdbe342e6c, type: 2}
   OnDeath:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2100000, guid: 39985f520a271a84883bb1c9b2923d73, type: 2}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnBackToPool:
     m_PersistentCalls:
       m_Calls: []
