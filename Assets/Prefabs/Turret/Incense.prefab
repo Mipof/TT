@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 3095440937695926248}
   - component: {fileID: 4117524110759135112}
   - component: {fileID: 626312133836925145}
+  - component: {fileID: 7701986252233411425}
   m_Layer: 0
   m_Name: Incense
   m_TagString: Untagged
@@ -278,6 +279,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9ff60ac52fde2f43834dafe681814a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &7701986252233411425
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676725151591290639}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 87f0407de968aa94cb2d38479b7f098a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1001 &2776885329093712162
 PrefabInstance:
   m_ObjectHideFlags: 0
