@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Wave
   m_EditorClassIdentifier: 
   _waves:
-  - EnemyType: 0
-    Quantity: 50
+  - WavaName: 
+    EnemyType: 0
+    Quantity: 10
     TimeDelay: 1
