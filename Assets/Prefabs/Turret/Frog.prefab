@@ -325,12 +325,12 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: 541.023, y: 26.749456, z: 1}
-  - {x: 542.91864, y: 27.602743, z: 1}
-  - {x: 544.4289, y: 28.329584, z: 1}
+  - {x: 612.7583, y: -2.5148506, z: 1}
+  - {x: 621.7923, y: 1.0995598, z: 1}
+  - {x: 624.19574, y: 2.2177505, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 1.9811038
+    widthMultiplier: 10.532514
     widthCurve:
       serializedVersion: 2
       m_Curve:
