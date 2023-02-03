@@ -29,6 +29,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable/LevelData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable/PoolManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scriptable/TurretData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SetSlow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Test.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Test/CameraProperties.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Turret/TurretIconSetter.cs" root0="FORCE_HIGHLIGHTING" />
@@ -117,7 +118,7 @@
       <workItem from="1675361322785" duration="457000" />
       <workItem from="1675361793604" duration="19940000" />
       <workItem from="1675396793450" duration="1779000" />
-      <workItem from="1675443753216" duration="9164000" />
+      <workItem from="1675443753216" duration="11561000" />
     </task>
     <servers />
   </component>

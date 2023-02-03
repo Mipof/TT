@@ -8,6 +8,7 @@ public class FollowWaypoint : MonoBehaviour
     private bool _ready;
     
     private float _speed;
+    private float _speedMultiplier = 1f;
     
     [SerializeField][Range(0f,50f)][Min(0f)]
     private float _distanceThreshold;
@@ -36,7 +37,7 @@ public class FollowWaypoint : MonoBehaviour
         while (_ready && distance > _distanceThreshold && GameManager.Instance.GameState == GameState.PLAY)
         {
             transform.position = Vector3.MoveTowards(transform.position, _wayPoint[_wayPointIndex].transform.position,
-                Time.deltaTime * _speed);
+                Time.deltaTime * _speed * _speedMultiplier);
             distance = Vector3.Distance(transform.position, _wayPoint[_wayPointIndex].transform.position);
             yield return null;
         }
@@ -46,5 +47,11 @@ public class FollowWaypoint : MonoBehaviour
             _wayPointIndex++;
             StartCoroutine(MoveToNextWaypoint());
         }
+    }
+
+    public void SetNewSpeedMultiplier(float speed)
+    {
+        print("New multiplier is: " + speed);
+        _speedMultiplier = speed;
     }
 }

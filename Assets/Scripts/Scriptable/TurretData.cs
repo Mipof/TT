@@ -8,6 +8,7 @@ public class TurretData : ScriptableObject
    {
       public TurretType Type;
       public int DamagePerHit;
+      public float StatusValue;
       public float Health;
       public int CostToBuild;
       public bool CanUpgrade;
@@ -15,6 +16,7 @@ public class TurretData : ScriptableObject
       public bool IsAnimated;
       public GameObject Prefab;
       public Sprite sprite;
+      public float area;
    }
 
    public Turret _turret;

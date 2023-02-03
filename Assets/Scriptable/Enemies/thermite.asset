@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7e1b7668ef6625458b4f42956418165, type: 3}
-  m_Name: thermite
+  m_Name: Thermite
   m_EditorClassIdentifier: 
   _enemy:
     Type: 0
