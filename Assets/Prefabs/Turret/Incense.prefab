@@ -101,7 +101,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d941368ab81de9142bb9a7c14b233ca7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _brain: {fileID: 0}
+  X: 0
+  Y: 0
+  Z: 0
 --- !u!114 &8446200905433856961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,7 +155,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9beb8e7167c9a4e43a341ee7a170851d, type: 2}
   - {fileID: 11400000, guid: 26ef2dde67343bb4b952e3a9140ccb26, type: 2}
   _animations: []
-  _upgradeIcon: {fileID: 0}
+  _upgradeIcon: {fileID: 63399438187620364}
   OnRemove:
     m_PersistentCalls:
       m_Calls: []
@@ -313,6 +315,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9edb5801e2d7db04397bb66368713ef4, type: 3}
+--- !u!1 &63399438187620364 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2453283793099867414, guid: 9edb5801e2d7db04397bb66368713ef4,
+    type: 3}
+  m_PrefabInstance: {fileID: 2516084925158993178}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &3834850358544617366 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1716660898099487372, guid: 9edb5801e2d7db04397bb66368713ef4,
