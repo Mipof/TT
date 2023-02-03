@@ -15,33 +15,57 @@ MonoBehaviour:
   _waves:
   - WavaName: 1
     EnemyType: 0
-    Quantity: 5
-    TimeDelay: 1
+    Quantity: 9
+    TimeDelay: 0.75
+  - WavaName: 1
+    EnemyType: 0
+    Quantity: 1
+    TimeDelay: 5
+  - WavaName: 2
+    EnemyType: 0
+    Quantity: 6
+    TimeDelay: 0.75
   - WavaName: 2
     EnemyType: 1
     Quantity: 1
     TimeDelay: 0
   - WavaName: 2
     EnemyType: 0
-    Quantity: 5
-    TimeDelay: 1
-  - WavaName: 3
-    EnemyType: 2
-    Quantity: 1
-    TimeDelay: 0
-  - WavaName: 3
+    Quantity: 6
+    TimeDelay: 0.75
+  - WavaName: 2
     EnemyType: 1
-    Quantity: 5
-    TimeDelay: 3
-  - WavaName: 3
-    EnemyType: 2
-    Quantity: 2
+    Quantity: 1
     TimeDelay: 5
   - WavaName: 3
     EnemyType: 0
+    Quantity: 4
+    TimeDelay: 1
+  - WavaName: 3
+    EnemyType: 1
+    Quantity: 1
+    TimeDelay: 0
+  - WavaName: 3
+    EnemyType: 0
+    Quantity: 4
+    TimeDelay: 1
+  - WavaName: 3
+    EnemyType: 1
+    Quantity: 1
+    TimeDelay: 0
+  - WavaName: 3
+    EnemyType: 0
+    Quantity: 4
+    TimeDelay: 1
+  - WavaName: 3
+    EnemyType: 2
     Quantity: 2
+    TimeDelay: 1
+  - WavaName: 3
+    EnemyType: 0
+    Quantity: 4
     TimeDelay: 1
   - WavaName: 3
     EnemyType: 1
     Quantity: 2
-    TimeDelay: 0
+    TimeDelay: 1

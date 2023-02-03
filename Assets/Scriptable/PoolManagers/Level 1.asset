@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8621c3e2f531b9f4e860adff97eb51cc, type: 3}
-  m_Name: Level1
+  m_Name: Level 1
   m_EditorClassIdentifier: 
   Pools:
   - TYPE: 0
-    QuantityInstansiated: 50
+    QuantityInstansiated: 40
     Prefab: {fileID: 8169320908573551320, guid: b0e0e76c0e0481d48bda29935b280dc1,
       type: 3}
   - TYPE: 1
-    QuantityInstansiated: 5
+    QuantityInstansiated: 8
     Prefab: {fileID: 2202477200903156702, guid: d79d71706035fb547aaeb674793c7695,
       type: 3}
   - TYPE: 2
-    QuantityInstansiated: 2
+    QuantityInstansiated: 5
     Prefab: {fileID: 5110552329264007300, guid: b8d0018ad31e8f24a88ccd61bcf18909,
       type: 3}
