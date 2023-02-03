@@ -35,5 +35,9 @@ public class DetectAnEnemy : MonoBehaviour
                 OnLoseEnemy?.Invoke();
             }
         }
+        else
+        {
+            _enemyDetected = null;
+        }
     }
 }

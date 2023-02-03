@@ -20,8 +20,11 @@ public class LevelManager : MonoBehaviour
         _poolManager.CreatePools();
         _resourceManager.AddCurrency(_levelData._level.InitialCurrency);
         _tree.GetComponent<Health>().SetMaxHealth(_levelData._level.TreeHealth);
+        _tree.GetComponent<Health>().HealToMax();
+        
         GameManager.Instance.Brain = _levelBrain;
         GameManager.Instance.LevelManager = this;
+        
     }
 
     public void StartGame()

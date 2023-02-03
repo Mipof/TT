@@ -53,4 +53,10 @@ public class UIManager : MonoBehaviour
             }
         }
     }
+
+    public void Defeat()
+    {
+        Time.timeScale = 0;
+        _loseScreen.SetActive(true);
+    }
 }
