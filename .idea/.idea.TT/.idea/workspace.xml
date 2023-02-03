@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3450c3e6-d29f-4e7b-8e05-b73770258506" name="Changes" comment="" />
+    <list default="true" id="3450c3e6-d29f-4e7b-8e05-b73770258506" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TT/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TT/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LevelMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelMenu.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/enemy/Beetle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/enemy/Beetle.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/enemy/Grasshopper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/enemy/Grasshopper.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/enemy/Termite.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/enemy/Termite.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WavesSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WavesSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/Qdbettercomicsans-jEEeG SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/Qdbettercomicsans-jEEeG SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Visual assets/UI/Cross.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Visual assets/UI/Cross.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,6 +58,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   },
@@ -107,6 +125,7 @@
       <workItem from="1675272204970" duration="15574000" />
       <workItem from="1675361322785" duration="457000" />
       <workItem from="1675361793604" duration="19940000" />
+      <workItem from="1675396793450" duration="646000" />
     </task>
     <servers />
   </component>
