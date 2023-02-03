@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -402876006026764650}
   - component: {fileID: -864112686686735876}
   - component: {fileID: 6280172262745248655}
-  - component: {fileID: 1244814909202097534}
+  - component: {fileID: -8177121868270387651}
   m_Layer: 0
   m_Name: Termite
   m_TagString: Enemy
@@ -157,7 +157,19 @@ MonoBehaviour:
   _shield: 0
   OnZeroHealth:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6280172262745248655}
+        m_TargetAssemblyTypeName: Enemy, Assembly-CSharp
+        m_MethodName: DisableGO
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnZeroShield:
     m_PersistentCalls:
       m_Calls: []
@@ -214,19 +226,42 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: -8177121868270387651}
+        m_TargetAssemblyTypeName: CurrencyOnDeath, Assembly-CSharp
+        m_MethodName: SendCurrency
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnBackToPool:
     m_PersistentCalls:
-      m_Calls: []
---- !u!65 &1244814909202097534
-BoxCollider:
+      m_Calls:
+      - m_Target: {fileID: -402876006026764650}
+        m_TargetAssemblyTypeName: FollowWaypoint, Assembly-CSharp
+        m_MethodName: SetNotReady
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &-8177121868270387651
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8169320908573551320}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 27.324455, y: 20.48, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d616456bfa38f7949bc070669a817211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
