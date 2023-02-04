@@ -60,4 +60,10 @@ public class UIManager : MonoBehaviour
         Time.timeScale = 0;
         _loseScreen.SetActive(true);
     }
+
+    public void Win()
+    {
+        Time.timeScale = 0;
+        _winScreen.SetActive(true);
+    }
 }

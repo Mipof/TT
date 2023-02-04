@@ -285,6 +285,37 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 26385007}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &51329340
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 51329341}
+  m_Layer: 0
+  m_Name: Enemies
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &51329341
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51329340}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 115.03005, y: -82.995605, z: 2.9655762}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &88689211
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -551,6 +582,22 @@ MonoBehaviour:
   - {fileID: 590374432}
   - {fileID: 1071175266}
   - {fileID: 1225449815}
+  _enemyParent: {fileID: 51329341}
+  FinalWave:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1135216072}
+        m_TargetAssemblyTypeName: WinDetector, Assembly-CSharp
+        m_MethodName: FinalWave
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &208797912
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3915,6 +3962,66 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1 &1135216071
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1135216073}
+  - component: {fileID: 1135216072}
+  m_Layer: 0
+  m_Name: WinDetector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1135216072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135216071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f44e8de810f8bed43a4adfede5b6a20b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemyParent: {fileID: 51329340}
+  WinCondition:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1880559420}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: Win
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!4 &1135216073
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135216071}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 115.03005, y: -82.995605, z: 2.9655762}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1150234569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4774,6 +4881,22 @@ MonoBehaviour:
   - {fileID: 1730108051}
   - {fileID: 1731633119}
   - {fileID: 17636606}
+  _enemyParent: {fileID: 51329341}
+  FinalWave:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1135216072}
+        m_TargetAssemblyTypeName: WinDetector, Assembly-CSharp
+        m_MethodName: FinalWave
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1480989657 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4466431753595620243, guid: b9bd8ddfe7f8c7c4c92a3a0a5213c8a2,
@@ -5021,6 +5144,22 @@ MonoBehaviour:
   - {fileID: 26385009}
   - {fileID: 1032809199}
   - {fileID: 987594337}
+  _enemyParent: {fileID: 51329341}
+  FinalWave:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1135216072}
+        m_TargetAssemblyTypeName: WinDetector, Assembly-CSharp
+        m_MethodName: FinalWave
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1488718507
 Transform:
   m_ObjectHideFlags: 0
@@ -7448,6 +7587,22 @@ MonoBehaviour:
   - {fileID: 1872195063}
   - {fileID: 953096463}
   - {fileID: 2007590719}
+  _enemyParent: {fileID: 51329341}
+  FinalWave:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1135216072}
+        m_TargetAssemblyTypeName: WinDetector, Assembly-CSharp
+        m_MethodName: FinalWave
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1995203150
 Transform:
   m_ObjectHideFlags: 0

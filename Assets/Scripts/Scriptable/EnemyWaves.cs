@@ -7,7 +7,7 @@ public class EnemyWaves : ScriptableObject
     [Serializable]
     public struct EnemyQty
     {
-        public string WavaName;
+        public WaveType WaveType;
         public EnemyType EnemyType;
         public int Quantity;
         public float TimeDelay;
