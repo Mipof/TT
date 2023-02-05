@@ -11,13 +11,14 @@ GameObject:
   - component: {fileID: 676725151591290637}
   - component: {fileID: 676725151591290636}
   - component: {fileID: 5989868660335024697}
+  - component: {fileID: 7701986252233411425}
   - component: {fileID: 8446200905433856961}
   - component: {fileID: 5436447735237529266}
   - component: {fileID: 2327276013264153423}
   - component: {fileID: 4117524110759135112}
-  - component: {fileID: 626312133836925145}
-  - component: {fileID: 7701986252233411425}
   - component: {fileID: -4344388222894870372}
+  - component: {fileID: 6434961725285548590}
+  - component: {fileID: 626312133836925145}
   m_Layer: 0
   m_Name: Incense
   m_TagString: Turret
@@ -108,10 +109,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   X: 1
   Y: 0
-  Z: 0
+  Z: 1
   _lookAllTime: 0
   _off: 0
   _camera: 0
+--- !u!95 &7701986252233411425
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676725151591290639}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 87f0407de968aa94cb2d38479b7f098a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!114 &8446200905433856961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e269b3e02a4ecb54f907d0906869726f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 0
+  _damage: 2
 --- !u!114 &5436447735237529266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,38 +295,6 @@ MonoBehaviour:
         m_CallState: 2
   _tagField: Enemy
   _delay: 0
---- !u!114 &626312133836925145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 676725151591290639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9ff60ac52fde2f43834dafe681814a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!95 &7701986252233411425
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 676725151591290639}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 87f0407de968aa94cb2d38479b7f098a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
 --- !u!114 &-4344388222894870372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -322,6 +311,31 @@ MonoBehaviour:
   OnDestroy:
     m_PersistentCalls:
       m_Calls: []
+--- !u!65 &6434961725285548590
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676725151591290639}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 60, y: 10, z: 60}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &626312133836925145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676725151591290639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9ff60ac52fde2f43834dafe681814a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2829390195151979071
 GameObject:
   m_ObjectHideFlags: 0

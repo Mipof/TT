@@ -103,15 +103,16 @@ GameObject:
   m_Component:
   - component: {fileID: 8014857611221672353}
   - component: {fileID: 8014857611221672354}
+  - component: {fileID: -3638994853156686676}
   - component: {fileID: 8014857611221672355}
   - component: {fileID: 8119405441969291785}
   - component: {fileID: -3098191889485420996}
-  - component: {fileID: -3638994853156686676}
   - component: {fileID: -6883617159084878282}
   - component: {fileID: -2770300065222413967}
   - component: {fileID: 737154488296237688}
   - component: {fileID: 5374288943517717036}
   - component: {fileID: -6268826123882969293}
+  - component: {fileID: -8956814751032002974}
   m_Layer: 0
   m_Name: Frog
   m_TagString: Turret
@@ -188,6 +189,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-3638994853156686676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8014857611221672364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d941368ab81de9142bb9a7c14b233ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  X: 1
+  Y: 0
+  Z: 0
+  _lookAllTime: 0
+  _off: 0
+  _camera: 0
 --- !u!95 &8014857611221672355
 Animator:
   serializedVersion: 5
@@ -220,7 +239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e269b3e02a4ecb54f907d0906869726f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 0
+  _damage: 100
 --- !u!114 &-3098191889485420996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,24 +260,6 @@ MonoBehaviour:
   OnZeroShield:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &-3638994853156686676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8014857611221672364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d941368ab81de9142bb9a7c14b233ca7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  X: 1
-  Y: 0
-  Z: 0
-  _lookAllTime: 0
-  _off: 0
-  _camera: 0
 --- !u!114 &-6883617159084878282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -506,6 +507,19 @@ MonoBehaviour:
   OnDestroy:
     m_PersistentCalls:
       m_Calls: []
+--- !u!65 &-8956814751032002974
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8014857611221672364}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 40, y: 10, z: 40}
+  m_Center: {x: 0, y: -5, z: 0}
 --- !u!1001 &9201641201793118124
 PrefabInstance:
   m_ObjectHideFlags: 0

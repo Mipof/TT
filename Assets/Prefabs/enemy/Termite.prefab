@@ -9,11 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 905866071895608176}
-  - component: {fileID: 2174741788135563605}
   - component: {fileID: 5641623131936993771}
-  - component: {fileID: 6961389725808642141}
   - component: {fileID: 8489799453868855905}
+  - component: {fileID: 2174741788135563605}
   - component: {fileID: 1207349168219860380}
+  - component: {fileID: 6961389725808642141}
   - component: {fileID: -402876006026764650}
   - component: {fileID: -864112686686735876}
   - component: {fileID: 6280172262745248655}
@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 507022455375663648}
   - component: {fileID: 5648728801174214857}
   - component: {fileID: 8016156745472205457}
-  - component: {fileID: -2477257236753323359}
   m_Layer: 0
   m_Name: Termite
   m_TagString: Enemy
@@ -37,33 +36,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8169320908573551320}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 664.7917, y: 53.397964, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &2174741788135563605
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8169320908573551320}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1fb28b1378c3b2f4592c360850c95d78, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
 --- !u!212 &5641623131936993771
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -116,24 +95,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6961389725808642141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8169320908573551320}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d941368ab81de9142bb9a7c14b233ca7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  X: 1
-  Y: 1
-  Z: 1
-  _lookAllTime: 1
-  _off: 0
-  _camera: 0
 --- !u!54 &8489799453868855905
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -150,6 +111,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &2174741788135563605
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8169320908573551320}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1fb28b1378c3b2f4592c360850c95d78, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!114 &1207349168219860380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,6 +163,24 @@ MonoBehaviour:
   OnZeroShield:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6961389725808642141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8169320908573551320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d941368ab81de9142bb9a7c14b233ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  X: 1
+  Y: 1
+  Z: 1
+  _lookAllTime: 1
+  _off: 0
+  _camera: 0
 --- !u!114 &-402876006026764650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,7 +313,14 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnEnemyEnterPosition:
+    m_PersistentCalls:
+      m_Calls: []
+  OnEnemyExit:
+    m_PersistentCalls:
+      m_Calls: []
   _tagField: Tree
+  _delay: 0
 --- !u!114 &8016156745472205457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,16 +334,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 0
---- !u!65 &-2477257236753323359
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8169320908573551320}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 27.324455, y: 20.48, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1093199550714830838}
   - component: {fileID: 9167062582609361924}
   - component: {fileID: 1674595165053242485}
+  - component: {fileID: -4583677621650509440}
   m_Layer: 0
   m_Name: Solid poison 2
   m_TagString: Untagged
@@ -98,9 +99,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d941368ab81de9142bb9a7c14b233ca7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  X: 0
+  X: 1
   Y: 0
-  Z: 0
+  Z: 1
   _lookAllTime: 0
   _off: 0
   _camera: 0
@@ -124,3 +125,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &-4583677621650509440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093199550714830839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e269b3e02a4ecb54f907d0906869726f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damage: 4

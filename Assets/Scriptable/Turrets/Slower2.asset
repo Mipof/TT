@@ -14,13 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _turret:
     Type: 4
-    DamagePerHit: 8
+    DamagePerHit: 4
     StatusValue: 0.75
     Health: 2
     CostToBuild: 2
     CanUpgrade: 1
     CostToUpgrade: 120
     IsAnimated: 0
+    Delay: 0
     Prefab: {fileID: 0}
     sprite: {fileID: 0}
     area: 0
